@@ -95,8 +95,8 @@ gantt
 **Goal:** a motivating home screen driven by pure, tested domain logic.
 
 ### Tasks
-- [ ] `domain/stats.ts` with injectable clock (elapsed, cigsAvoided, moneySaved, lifeRegained)
-- [ ] `domain/milestones.ts` + `domain/healthTimeline.ts`
+- [x] `domain/stats.ts` with injectable clock (elapsed, cigsAvoided, moneySaved, lifeRegained)
+- [x] `domain/milestones.ts` + `domain/healthTimeline.ts`
 - [ ] Seed milestones + quotes + tips content
 - [ ] `useTicker` (focus-aware) and `useStats` hooks
 - [ ] Home: timer ring, 3 stat tiles, next milestone, daily quote
