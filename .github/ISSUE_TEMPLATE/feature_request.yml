@@ -1,0 +1,30 @@
+name: Feature Request
+description: Propose a new psychological technique or improvement
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What psychological or user need does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature, user journey, and offline compatibility.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (MoSCoW)
+      options:
+        - "Must have"
+        - "Should have"
+        - "Could have"
+        - "Won't have (v1)"
+    validations:
+      required: true

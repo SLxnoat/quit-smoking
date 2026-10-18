@@ -1,98 +1,79 @@
-import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
-import { AnimatedIcon } from '@/components/animated-icon';
-import { HintRow } from '@/components/hint-row';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
-
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Button, Card, Screen, Text } from '../components';
+import { useTheme } from '../hooks/use-theme';
 
 export default function HomeScreen() {
+  const { mode, setMode } = useTheme();
+
+  const toggleTheme = () => {
+    setMode(mode === 'dark' ? 'light' : 'dark');
+  };
+
   return (
-    <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.heroSection}>
-          <AnimatedIcon />
-          <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
-          </ThemedText>
-        </ThemedView>
+    <Screen style={styles.screen}>
+      <View style={styles.content}>
+        <View style={styles.header}>
+          <Text variant="caption" color="brand" style={styles.tag}>
+            OFFLINE &bull; PRIVATE &bull; COMPASSIONATE
+          </Text>
+          <Text variant="hero" color="primary" center>
+            Ember
+          </Text>
+          <Text variant="body" color="secondary" center style={styles.subtitle}>
+            Your calm companion to a smoke-free life.
+          </Text>
+        </View>
 
-        <ThemedText type="code" style={styles.code}>
-          get started
-        </ThemedText>
-
-        <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
+        <Card variant="elevated" padding="lg" style={styles.card}>
+          <Text variant="title3" color="primary" center>
+            Sprint 0: Foundation Ready
+          </Text>
+          <Text variant="bodySmall" color="secondary" center style={styles.cardBody}>
+            Offline SQLite, typed design tokens, UI primitives, and security configurations
+            are initialized.
+          </Text>
+          <Button
+            title={`Switch to ${mode === 'dark' ? 'Light' : 'Dark'} Mode`}
+            variant="outline"
+            size="md"
+            onPress={toggleTheme}
+            style={styles.button}
           />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
-
-        {Platform.OS === 'web' && <WebBadge />}
-      </SafeAreaView>
-    </ThemedView>
+        </Card>
+      </View>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  screen: {
     justifyContent: 'center',
-    flexDirection: 'row',
   },
-  safeArea: {
-    flex: 1,
-    paddingHorizontal: Spacing.four,
+  content: {
+    gap: 24,
+    maxWidth: 480,
+    width: '100%',
+    alignSelf: 'center',
+  },
+  header: {
     alignItems: 'center',
-    gap: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.three,
-    maxWidth: MaxContentWidth,
+    gap: 8,
   },
-  heroSection: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.four,
+  tag: {
+    letterSpacing: 1.2,
+    fontWeight: '700',
   },
-  title: {
-    textAlign: 'center',
+  subtitle: {
+    marginTop: 4,
   },
-  code: {
-    textTransform: 'uppercase',
+  card: {
+    gap: 16,
   },
-  stepContainer: {
-    gap: Spacing.three,
-    alignSelf: 'stretch',
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.four,
-    borderRadius: Spacing.four,
+  cardBody: {
+    lineHeight: 22,
+  },
+  button: {
+    marginTop: 8,
   },
 });
