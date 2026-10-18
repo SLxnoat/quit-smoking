@@ -68,26 +68,26 @@ gantt
 **Goal:** persistent DB with migrations, user can complete onboarding.
 
 ### Tasks
-- [ ] `db/client.ts`: open DB, `PRAGMA journal_mode=WAL; foreign_keys=ON`
-- [ ] `db/migrations.ts` using `PRAGMA user_version`; schema v1 from [03](03-architecture-and-database.md)
-- [ ] Wrap app in `SQLiteProvider` with `onInit` migration + seed
-- [ ] Repositories: profile, reasons, triggers, settings
-- [ ] Seed predefined triggers
-- [ ] Onboarding routes: welcome → quit date → habits/cost → reasons → triggers → disclaimer
-- [ ] Form validation (zod) and friendly errors
-- [ ] Onboarding gate in root `_layout.tsx` (redirect logic)
-- [ ] i18n scaffold; English strings
-- [ ] Medical disclaimer screen with acceptance stored
-- [ ] Unit tests: migrations (fresh + idempotent), repositories (in-memory DB)
+- [x] `db/client.ts`: open DB, `PRAGMA journal_mode=WAL; foreign_keys=ON`
+- [x] `db/migrations.ts` using `PRAGMA user_version`; schema v1 from [03](03-architecture-and-database.md)
+- [x] Wrap app in `SQLiteProvider` with `onInit` migration + seed
+- [x] Repositories: profile, reasons, triggers, settings
+- [x] Seed predefined triggers
+- [x] Onboarding routes: welcome → quit date → habits/cost → reasons → triggers → disclaimer
+- [x] Form validation (zod) and friendly errors
+- [x] Onboarding gate in root `_layout.tsx` (redirect logic)
+- [x] i18n scaffold; English strings
+- [x] Medical disclaimer screen with acceptance stored
+- [x] Unit tests: migrations (fresh + idempotent), repositories (in-memory DB)
 
 ### Acceptance checklist
-- [ ] Fresh install → onboarding → data persisted after app kill
-- [ ] Cannot finish without ≥ 1 reason
-- [ ] Future quit date handled
-- [ ] Works in airplane mode
+- [x] Fresh install → onboarding → data persisted after app kill
+- [x] Cannot finish without ≥ 1 reason
+- [x] Future quit date handled
+- [x] Works in airplane mode
 
 ### Exit
-- [ ] FR-ONB-1..3 verified · migration tests pass · demo recorded
+- [x] FR-ONB-1..3 verified · migration tests pass · demo recorded
 
 ---
 
