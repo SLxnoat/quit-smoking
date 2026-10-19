@@ -121,27 +121,27 @@ gantt
 **Goal:** the core "in the moment" value.
 
 ### Tasks
-- [ ] Craving modal route; floating SOS button on Home
-- [ ] Intensity-before input, reasons carousel
-- [ ] Urge-surfing timer (5–10 min) with rotating prompts
-- [ ] Breathing exercise (box / 4-7-8) with reanimated circle + haptics
-- [ ] Distraction tools: 4Ds checklist, 5-4-3-2-1 grounding
-- [ ] Outcome logging (resisted / smoked / abandoned), trigger, intensity-after
-- [ ] Craving repo + "cravings resisted" achievements
-- [ ] Slip flow: compassionate copy, trigger, reflection, reset option
-- [ ] Slip service transaction; preserve lifetime stats; reschedule hooks (stub)
-- [ ] Support contacts (add/call) — P2 optional
-- [ ] Reduce-motion support; haptics settings toggle
-- [ ] Tests TC-007; Maestro flow: craving resisted; slip
+- [x] Craving modal route; floating SOS button on Home
+- [x] Intensity-before input, reasons carousel
+- [x] Urge-surfing timer (5–10 min) with rotating prompts
+- [x] Breathing exercise (box / 4-7-8) with reanimated circle + haptics
+- [x] Distraction tools: 4Ds checklist, 5-4-3-2-1 grounding
+- [x] Outcome logging (resisted / smoked / abandoned), trigger, intensity-after
+- [x] Craving repo + "cravings resisted" achievements
+- [x] Slip flow: compassionate copy, trigger, reflection, reset option
+- [x] Slip service transaction; preserve lifetime stats; reschedule hooks (stub)
+- [x] Support contacts (add/call) — P2 optional
+- [x] Reduce-motion support; haptics settings toggle
+- [x] Tests TC-007; Maestro flow: craving resisted; slip
 
 ### Acceptance checklist
-- [ ] SOS reachable in ≤ 2 taps (FR-CRV-1)
-- [ ] App killed mid-craving does not corrupt data
-- [ ] Slip keeps lifetime days (Gherkin in doc 08)
-- [ ] Screen-reader announces phase changes politely
+- [x] SOS reachable in ≤ 2 taps (FR-CRV-1)
+- [x] App killed mid-craving does not corrupt data
+- [x] Slip keeps lifetime days (Gherkin in doc 08)
+- [x] Screen-reader announces phase changes politely
 
 ### Exit
-- [ ] FR-CRV-1..3, FR-SLP-1 verified · **Internal alpha build #1**
+- [x] FR-CRV-1..3, FR-SLP-1 verified · **Internal alpha build #1**
 
 ---
 

@@ -51,7 +51,8 @@ CREATE TABLE IF NOT EXISTS slips (
   cigarettes INTEGER NOT NULL DEFAULT 1,
   trigger_id INTEGER REFERENCES triggers(id) ON DELETE SET NULL,
   reflection TEXT,
-  reset_streak INTEGER NOT NULL DEFAULT 1
+  reset_streak INTEGER NOT NULL DEFAULT 1,
+  previous_quit_at INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS checkins (
@@ -191,7 +192,12 @@ export async function migrateDb(db: SQLiteDatabase): Promise<void> {
       await setSchemaVersion(db, 1);
     });
   } else {
-    // App update / warm start: keep bundled content in sync with latest definitions
+    // App update / warm start: keep schema and bundled content in sync
+    try {
+      await db.execAsync('ALTER TABLE slips ADD COLUMN previous_quit_at INTEGER;');
+    } catch {
+      // Column already exists
+    }
     await seedContent(db);
   }
 }

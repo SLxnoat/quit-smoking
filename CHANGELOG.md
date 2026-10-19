@@ -49,4 +49,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `CelebrationModal` component powered by `react-native-reanimated` with spring scale-in, bounce animations, success haptics (`expo-haptics`), and accessibility dialog semantics.
   - Settings Screen (`src/app/(tabs)/settings.tsx`) featuring smoking habit profile editor with Zod validation, reasons manager (add/remove), light/dark/system theme picker, and clinical safety quitline directory.
   - Table-driven unit and integration tests covering TC-001 through TC-006, and TC-013 (UTC epoch arithmetic across DST changes), achieving 89 passing tests across 10 test suites.
+- **Sprint 3: Craving SOS & Slip Support (Internal Alpha #1)**
+  - Full-screen modal Craving SOS flow ([`src/app/craving.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/src/app/craving.tsx)) accessible in ≤ 2 taps from launch via persistent floating action button and dashboard trigger card (FR-CRV-1).
+  - Pre-tool assessment with dynamic 1–10 intensity slider chips, personalized reasons carousel with arrow navigation, and situational trigger tagging.
+  - Urge-surfing module based on Marlatt's relapse prevention with 3/5/10 min countdown options and 8 psychological anchors rotating every 15 seconds.
+  - Guided breathing module with real-time switching between 4-7-8 and Box (4-4-4-4) patterns, synchronized `react-native-reanimated` expanding circle, and phase-synchronized `expo-haptics`.
+  - Distraction tools module featuring NHS 4Ds interactive checklist and 5-4-3-2-1 sensory grounding stepper.
+  - Support contacts module with direct tap-to-call integration (`tel:`) for national quitlines (US 1-800-QUIT-NOW, Crisis Text Line 741741, UK NHS Smokefree) and personal contacts.
+  - Craving repository ([`src/db/repositories/craving.repo.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/src/db/repositories/craving.repo.ts)) persisting intensity before/after, outcome (`resisted`, `smoked`, `abandoned`), tool used, duration, and notes.
+  - Automatic evaluation and unlocks for "cravings resisted" achievements (`crv_1` through `crv_50`).
+  - Compassionate Slip flow modal ([`src/app/slip.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/src/app/slip.tsx)) preventing Abstinence Violation Effect (AVE) with shame-free reassuring copy and lifetime days preserved indicator.
+  - Slip service transaction ([`src/services/slip.service.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/src/services/slip.service.ts)) executing atomic DB writes that record slip details, adjust `profile.quit_at` only when resetting streak, and trigger milestone notification rescheduling stubs.
+  - Slips repository ([`src/db/repositories/slips.repo.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/src/db/repositories/slips.repo.ts)) computing exact lifetime smoke-free duration across all past and current streak periods.
+  - Support contacts repository ([`src/db/repositories/support-contacts.repo.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/src/db/repositories/support-contacts.repo.ts)) with automated seeding and management.
+  - Hardware haptics toggle and reduce-motion support across animations and screen-reader polite phase change announcements (`AccessibilityInfo.announceForAccessibility`).
+  - Unit and integration tests covering slip handling (TC-007), support contacts, craving flow, and UI components — expanding suite to 110 tests across 15 test suites with 100% pass rate.
+  - Automated Maestro E2E test suite ([`.maestro/craving-and-slip.yaml`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/.maestro/craving-and-slip.yaml)) covering the complete journey: Home → SOS → Breathing → Urge Surfing → Resisted Outcome → Slip Support → Recommitment.
 

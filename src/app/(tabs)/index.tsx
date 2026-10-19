@@ -267,21 +267,60 @@ export default function HomeScreen() {
       )}
 
       {/* Craving SOS Trigger Button */}
-      <Card variant="flat" padding="md" style={styles.sosCard}>
-        <View style={styles.sosContent}>
-          <View style={styles.sosIconCircle}>
-            <Ionicons name="shield-checkmark" size={24} color="#FFFFFF" />
+      <TouchableOpacity
+        onPress={() => router.push('/craving' as any)}
+        accessibilityRole="button"
+        accessibilityLabel="Experiencing an Urge? Tap for Craving SOS"
+      >
+        <Card variant="flat" padding="md" style={styles.sosCard}>
+          <View style={styles.sosContent}>
+            <View style={styles.sosIconCircle}>
+              <Ionicons name="shield-checkmark" size={24} color="#FFFFFF" />
+            </View>
+            <View style={styles.sosTextContainer}>
+              <Text variant="title3" style={styles.sosTitle}>
+                Experiencing an Urge?
+              </Text>
+              <Text variant="caption" style={styles.sosSubtitle}>
+                Take 3 deep breaths. Urges peak in 3 minutes and always fade.
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color="rgba(255, 255, 255, 0.7)" />
           </View>
-          <View style={styles.sosTextContainer}>
-            <Text variant="title3" style={styles.sosTitle}>
-              Experiencing an Urge?
-            </Text>
-            <Text variant="caption" style={styles.sosSubtitle}>
-              Take 3 deep breaths. Urges peak in 3 minutes and always fade.
-            </Text>
-          </View>
-        </View>
-      </Card>
+        </Card>
+      </TouchableOpacity>
+
+      {/* Compassionate Slip Support Entry */}
+      <TouchableOpacity
+        onPress={() => router.push('/slip' as any)}
+        accessibilityRole="button"
+        accessibilityLabel="Had a slip? Tap for compassionate support"
+        style={styles.slipEntryRow}
+      >
+        <Ionicons name="heart-circle-outline" size={18} color={theme.colors.textSecondary} />
+        <Text variant="caption" color="secondary" style={styles.slipEntryText}>
+          Had a slip? We help you get right back on track without losing lifetime progress.
+        </Text>
+      </TouchableOpacity>
+
+      {/* Floating SOS Action Button */}
+      <TouchableOpacity
+        onPress={() => router.push('/craving' as any)}
+        style={[
+          styles.floatingSosButton,
+          {
+            backgroundColor: theme.colors.primary,
+            shadowColor: theme.colors.primary,
+          },
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel="Craving SOS - Immediate urge assistance"
+      >
+        <Ionicons name="shield-half" size={20} color="#FFFFFF" />
+        <Text variant="bodySmall" style={styles.floatingSosText}>
+          SOS
+        </Text>
+      </TouchableOpacity>
 
       {/* Milestone Celebration Modal */}
       <CelebrationModal
@@ -441,6 +480,41 @@ const styles = StyleSheet.create({
   },
   sosSubtitle: {
     color: '#D0E3E1',
+    lineHeight: 16,
+  },
+  floatingSosButton: {
+    position: 'absolute',
+    bottom: 24,
+    right: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingVertical: 12,
+    paddingHorizontal: 18,
+    borderRadius: 30,
+    elevation: 8,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+    zIndex: 999,
+  },
+  floatingSosText: {
+    color: '#FFFFFF',
+    fontWeight: '800',
+    letterSpacing: 1,
+  },
+  slipEntryRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    gap: 8,
+    marginTop: 6,
+    marginBottom: 8,
+  },
+  slipEntryText: {
+    flex: 1,
     lineHeight: 16,
   },
 });

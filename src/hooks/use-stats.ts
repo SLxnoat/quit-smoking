@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSQLiteContext, type SQLiteDatabase } from 'expo-sqlite';
 import { useFocusEffect } from 'expo-router';
 import { getProfile, type Profile } from '../db/repositories/profile.repo';
@@ -8,11 +8,16 @@ import {
   getNextHealthMilestone,
   type HealthMilestoneProgress,
 } from '../domain/healthTimeline';
+import {
+  getLifetimeStats,
+  getTotalSlipCigarettes,
+  type LifetimeStats,
+} from '../db/repositories/slips.repo';
 import { useTicker, type UseTickerOptions } from './use-ticker';
 
 export interface UseStatsOptions extends UseTickerOptions {
   /**
-   * Number of slips recorded during this cessation journey. Defaults to 0.
+   * Number of slips recorded during this cessation journey. Defaults to total logged in DB.
    */
   slipsCount?: number;
 }
@@ -20,6 +25,7 @@ export interface UseStatsOptions extends UseTickerOptions {
 export interface UseStatsResult {
   profile: Profile | null;
   stats: SmokeFreeStats | null;
+  lifetimeStats: LifetimeStats | null;
   nextMilestone: HealthMilestoneProgress | null;
   milestonesProgress: HealthMilestoneProgress[];
   isLoading: boolean;
@@ -36,19 +42,35 @@ export function useStatsCore(
   db: SQLiteDatabase,
   options: UseStatsOptions = {}
 ): UseStatsResult {
-  const { slipsCount = 0, intervalMs, enabled, clock } = options;
+  const { slipsCount, intervalMs, enabled, clock } = options;
 
   const [profile, setProfile] = useState<Profile | null>(null);
+  const [lifetimeStats, setLifetimeStats] = useState<LifetimeStats | null>(null);
+  const [dbSlipCigs, setDbSlipCigs] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
 
   // Focus- and AppState-aware live clock
   const now = useTicker({ intervalMs, enabled, clock });
+  const nowRef = useRef(now);
+  useEffect(() => {
+    nowRef.current = now;
+  }, [now]);
 
   const refresh = useCallback(async () => {
     try {
-      const data = await getProfile(db);
-      setProfile(data);
+      const [prof, slipCigs] = await Promise.all([
+        getProfile(db),
+        getTotalSlipCigarettes(db).catch(() => 0),
+      ]);
+      setProfile(prof);
+      setDbSlipCigs(slipCigs);
+      if (prof) {
+        const life = await getLifetimeStats(db, prof.quit_at, nowRef.current).catch(() => null);
+        setLifetimeStats(life);
+      } else {
+        setLifetimeStats(null);
+      }
       setError(null);
     } catch (err) {
       setError(err instanceof Error ? err : new Error(String(err)));
@@ -63,9 +85,17 @@ export function useStatsCore(
 
     async function initialize() {
       try {
-        const data = await getProfile(db);
+        const [prof, slipCigs] = await Promise.all([
+          getProfile(db),
+          getTotalSlipCigarettes(db).catch(() => 0),
+        ]);
         if (!cancelled) {
-          setProfile(data);
+          setProfile(prof);
+          setDbSlipCigs(slipCigs);
+          if (prof) {
+            const life = await getLifetimeStats(db, prof.quit_at, nowRef.current).catch(() => null);
+            if (!cancelled) setLifetimeStats(life);
+          }
           setError(null);
         }
       } catch (err) {
@@ -93,6 +123,9 @@ export function useStatsCore(
     }, [refresh])
   );
 
+  // Effective slips count for cigsAvoided calculation
+  const effectiveSlips = slipsCount !== undefined ? slipsCount : dbSlipCigs;
+
   // Recalculate smoke-free stats on every tick (now) or profile change
   const stats = useMemo<SmokeFreeStats | null>(() => {
     if (!profile) {
@@ -104,11 +137,11 @@ export function useStatsCore(
         cigsPerDay: profile.cigs_per_day,
         packSize: profile.pack_size,
         packPrice: profile.pack_price,
-        slipsCount,
+        slipsCount: effectiveSlips,
       },
       () => now
     );
-  }, [profile, now, slipsCount]);
+  }, [profile, now, effectiveSlips]);
 
   // Next upcoming recovery milestone
   const nextMilestone = useMemo<HealthMilestoneProgress | null>(() => {
@@ -129,6 +162,7 @@ export function useStatsCore(
   return {
     profile,
     stats,
+    lifetimeStats,
     nextMilestone,
     milestonesProgress,
     isLoading,

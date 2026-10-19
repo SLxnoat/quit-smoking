@@ -1,0 +1,71 @@
+appId: com.quitsmoking.app
+---
+# ==============================================================================
+# Sprint 3 Maestro E2E Flow: Craving Resisted & Compassionate Slip Handling
+# ==============================================================================
+
+# Launch App
+- launchApp:
+    clearState: false
+
+# 1. Verify Home Screen is visible with Hero ring and Craving SOS button
+- assertVisible: "Ember"
+- assertVisible: "Experiencing an Urge?"
+
+# 2. Tap Craving SOS floating button or card (≤ 2 taps)
+- tapOn: "Experiencing an Urge?"
+
+# 3. Assess Craving Phase
+- assertVisible: "CRAVING SOS"
+- assertVisible: "How intense is this urge right now?"
+- tapOn: "8"
+
+# 4. Navigate through Guided Breathing tool
+- tapOn: "Guided Breathing (4-7-8 & Box)"
+- assertVisible: "Deep Breathing"
+- assertVisible: "Inhale"
+- tapOn: "Box (4-4-4-4)"
+- assertVisible: "Box (4-4-4-4)"
+
+# 5. Navigate to Log Outcome directly from tool
+- tapOn: "I Feel Calmer — Log Outcome"
+- assertVisible: "Record Craving Outcome"
+
+# 6. Log Resisted Outcome
+- tapOn: "I Resisted the Craving!"
+- assertVisible: "Intensity dropped by"
+- tapOn: "Save & Complete Session"
+
+# 7. Returned to Home Screen; Verify Home Dashboard
+- assertVisible: "Ember"
+
+# 8. Record a Slip: Tap Compassionate Slip Support Entry
+- tapOn: "Had a slip? We help you get right back on track without losing lifetime progress."
+
+# 9. Verify Slip Support screen and compassionate reassurance
+- assertVisible: "Slip Support"
+- assertVisible: "A Slip Is Not Failure"
+- assertVisible: "Days Intact & Preserved"
+
+# 10. Select Cigarette amount and trigger
+- tapOn: "1"
+- tapOn: "Stress / Anxiety"
+
+# 11. Enter reflection plan
+- tapOn: "What was happening? How can you protect yourself next time?"
+- inputText: "I took a deep breath, went for a brisk walk, and remembered why I quit."
+- hideKeyboard
+
+# 12. Verify Reset current streak timer is active
+- assertVisible: "Reset current streak timer"
+
+# 13. Commit and Move Forward
+- tapOn: "Commit & Move Forward"
+
+# 14. Verify Recommitment Success Screen
+- assertVisible: "Back On Track"
+- assertVisible: "lifetime smoke-free days"
+- tapOn: "Return to Home Dashboard"
+
+# 15. Successfully back on Dashboard
+- assertVisible: "Ember"

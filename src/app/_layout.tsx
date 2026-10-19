@@ -61,6 +61,22 @@ function AppNavigationGate() {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="(tabs)" />
       <Stack.Screen name="(onboarding)" options={{ animation: 'fade' }} />
+      <Stack.Screen
+        name="craving"
+        options={{
+          presentation: 'modal',
+          animation: 'slide_from_bottom',
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="slip"
+        options={{
+          presentation: 'modal',
+          animation: 'slide_from_bottom',
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 }

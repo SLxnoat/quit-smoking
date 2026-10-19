@@ -7,6 +7,8 @@ export const SETTINGS_KEYS = {
   THEME_MODE: 'theme_mode',
   CURRENCY: 'currency',
   SECURITY_LOCK_ENABLED: 'security_lock_enabled',
+  HAPTICS_ENABLED: 'haptics_enabled',
+  REDUCE_MOTION: 'reduce_motion',
 } as const;
 
 export async function getSetting(
@@ -87,4 +89,28 @@ export async function clearAllUserData(db: SQLiteDatabase): Promise<void> {
     await db.runAsync('DELETE FROM triggers WHERE is_custom = 1;');
     await db.runAsync('UPDATE triggers SET is_active = 1;');
   });
+}
+
+export async function isHapticsEnabled(db: SQLiteDatabase): Promise<boolean> {
+  const val = await getSetting(db, SETTINGS_KEYS.HAPTICS_ENABLED);
+  return val !== 'false'; // Defaults to true
+}
+
+export async function setHapticsEnabled(
+  db: SQLiteDatabase,
+  enabled: boolean
+): Promise<void> {
+  await setSetting(db, SETTINGS_KEYS.HAPTICS_ENABLED, enabled ? 'true' : 'false');
+}
+
+export async function isReduceMotionSetting(db: SQLiteDatabase): Promise<boolean> {
+  const val = await getSetting(db, SETTINGS_KEYS.REDUCE_MOTION);
+  return val === 'true'; // Defaults to system / false
+}
+
+export async function setReduceMotionSetting(
+  db: SQLiteDatabase,
+  enabled: boolean
+): Promise<void> {
+  await setSetting(db, SETTINGS_KEYS.REDUCE_MOTION, enabled ? 'true' : 'false');
 }
