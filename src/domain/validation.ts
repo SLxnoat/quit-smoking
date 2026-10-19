@@ -46,7 +46,26 @@ export const DisclaimerSchema = z.object({
   accepted: z.literal(true),
 });
 
+export const ProfileEditSchema = HabitsSchema.extend({
+  quitAt: z.number().int().min(0, 'Quit timestamp is invalid'),
+  approach: z.enum(['cold_turkey', 'gradual']).default('cold_turkey'),
+});
+
+export const GoalSchema = z.object({
+  title: z
+    .string()
+    .trim()
+    .min(2, 'Goal title must be at least 2 characters')
+    .max(60, 'Goal title cannot exceed 60 characters'),
+  targetAmount: z
+    .number()
+    .positive('Target amount must be greater than 0')
+    .max(1000000, 'Target amount cannot exceed 1,000,000'),
+});
+
 export type QuitDateInput = z.infer<typeof QuitDateSchema>;
 export type HabitsInput = z.infer<typeof HabitsSchema>;
 export type ReasonsInput = z.infer<typeof ReasonsSchema>;
 export type DisclaimerInput = z.infer<typeof DisclaimerSchema>;
+export type ProfileEditInput = z.infer<typeof ProfileEditSchema>;
+export type GoalInput = z.infer<typeof GoalSchema>;

@@ -13,8 +13,12 @@ export const Palette = {
   // Light theme neutrals
   light: {
     background: '#F7FAF9',
+    surface: '#F7FAF9',
     card: '#FFFFFF',
+    cardBackground: '#FFFFFF',
+    cardBorder: '#E0EAE7',
     text: '#132E27',
+    textPrimary: '#132E27',
     textSecondary: '#627D77',
     textTertiary: '#9EABA7',
     border: '#E0EAE7',
@@ -22,13 +26,22 @@ export const Palette = {
     tint: '#0F9D8A',
     surfaceVariant: '#EEF5F3',
     elevated: '#FFFFFF',
+    primary: '#0F9D8A',
+    accentAmber: '#F5A524',
+    success: '#2E9E5B',
+    danger: '#D64545',
+    warning: '#E67E22',
   },
 
   // Dark theme neutrals
   dark: {
     background: '#0E1A1D',
+    surface: '#0E1A1D',
     card: '#16262B',
+    cardBackground: '#16262B',
+    cardBorder: '#22383E',
     text: '#E8F1EF',
+    textPrimary: '#E8F1EF',
     textSecondary: '#8CA59F',
     textTertiary: '#5C746E',
     border: '#22383E',
@@ -36,6 +49,11 @@ export const Palette = {
     tint: '#48C9B0',
     surfaceVariant: '#1D3036',
     elevated: '#20343A',
+    primary: '#0F9D8A',
+    accentAmber: '#F5A524',
+    success: '#2E9E5B',
+    danger: '#D64545',
+    warning: '#E67E22',
   },
 } as const;
 
@@ -118,8 +136,12 @@ export const Typography = {
 
 export interface ThemeColors {
   background: string;
+  surface: string;
   card: string;
+  cardBackground: string;
+  cardBorder: string;
   text: string;
+  textPrimary: string;
   textSecondary: string;
   textTertiary: string;
   border: string;
@@ -127,6 +149,11 @@ export interface ThemeColors {
   tint: string;
   surfaceVariant: string;
   elevated: string;
+  primary: string;
+  accentAmber: string;
+  success: string;
+  danger: string;
+  warning: string;
 }
 export type SpacingScale = typeof Spacing;
 export type RadiusScale = typeof Radius;

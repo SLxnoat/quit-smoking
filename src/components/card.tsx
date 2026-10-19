@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Pressable,
   PressableProps,
+  StyleProp,
   StyleSheet,
   View,
   ViewProps,
@@ -15,7 +16,7 @@ export interface CardProps extends ViewProps {
   variant?: CardVariant;
   padding?: 'none' | 'sm' | 'md' | 'lg';
   onPress?: PressableProps['onPress'];
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
 }
 

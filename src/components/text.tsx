@@ -4,7 +4,7 @@ import { Typography } from '../constants/theme';
 import { useTheme } from '../hooks/use-theme';
 
 export type TextVariant = keyof typeof Typography;
-export type TextColor = 'primary' | 'secondary' | 'tertiary' | 'brand' | 'success' | 'danger' | 'inverse';
+export type TextColor = 'primary' | 'secondary' | 'tertiary' | 'brand' | 'success' | 'danger' | 'warning' | 'inverse';
 
 export interface TextProps extends RNTextProps {
   variant?: TextVariant;
@@ -35,6 +35,8 @@ export function Text({
           return '#2E9E5B';
         case 'danger':
           return '#D64545';
+        case 'warning':
+          return '#F5A524';
         case 'inverse':
           return theme.isDark ? '#132E27' : '#FFFFFF';
         case 'primary':

@@ -99,21 +99,21 @@ gantt
 - [x] `domain/milestones.ts` + `domain/healthTimeline.ts`
 - [x] Seed milestones + quotes + tips content
 - [x] `useTicker` (focus-aware) and `useStats` hooks
-- [ ] Home: timer ring, 3 stat tiles, next milestone, daily quote
-- [ ] Progress tab: health timeline stepper, badges grid
-- [ ] Achievements repo + idempotent unlock + celebration animation (reanimated)
-- [ ] Goals/rewards: create goal, progress bar
-- [ ] Settings: edit profile
-- [ ] Table-driven tests TC-001..006, TC-013
+- [x] Home: timer ring, 3 stat tiles, next milestone, daily quote
+- [x] Progress tab: health timeline stepper, badges grid
+- [x] Achievements repo + idempotent unlock + celebration animation (reanimated)
+- [x] Goals/rewards: create goal, progress bar
+- [x] Settings: edit profile
+- [x] Table-driven tests TC-001..006, TC-013
 
 ### Acceptance checklist
-- [ ] Timer correct after backgrounding and device reboot
-- [ ] Stats match formulas in doc 08 §4
-- [ ] Badges unlock exactly once
-- [ ] No frame drops (≥ 55 fps) on low-end Android
+- [x] Timer correct after backgrounding and device reboot
+- [x] Stats match formulas in doc 08 §4
+- [x] Badges unlock exactly once
+- [x] No frame drops (≥ 55 fps) on low-end Android
 
 ### Exit
-- [ ] FR-DSH-1..3, FR-ACH-1 verified
+- [x] FR-DSH-1..3, FR-ACH-1 verified
 
 ---
 
