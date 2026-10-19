@@ -97,8 +97,8 @@ gantt
 ### Tasks
 - [x] `domain/stats.ts` with injectable clock (elapsed, cigsAvoided, moneySaved, lifeRegained)
 - [x] `domain/milestones.ts` + `domain/healthTimeline.ts`
-- [ ] Seed milestones + quotes + tips content
-- [ ] `useTicker` (focus-aware) and `useStats` hooks
+- [x] Seed milestones + quotes + tips content
+- [x] `useTicker` (focus-aware) and `useStats` hooks
 - [ ] Home: timer ring, 3 stat tiles, next milestone, daily quote
 - [ ] Progress tab: health timeline stepper, badges grid
 - [ ] Achievements repo + idempotent unlock + celebration animation (reanimated)

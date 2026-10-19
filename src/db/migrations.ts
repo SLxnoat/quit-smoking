@@ -1,5 +1,6 @@
 import { type SQLiteDatabase } from 'expo-sqlite';
 import { configurePragmas } from './client';
+import { seedContent } from './seed/content';
 
 export const SCHEMA_V1 = `
 CREATE TABLE IF NOT EXISTS profile (
@@ -186,7 +187,11 @@ export async function migrateDb(db: SQLiteDatabase): Promise<void> {
     await db.withTransactionAsync(async () => {
       await db.execAsync(SCHEMA_V1);
       await seedTriggers(db);
+      await seedContent(db);
       await setSchemaVersion(db, 1);
     });
+  } else {
+    // App update / warm start: keep bundled content in sync with latest definitions
+    await seedContent(db);
   }
 }

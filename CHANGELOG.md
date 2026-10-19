@@ -30,3 +30,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Built comprehensive 5-step onboarding wizard: Welcome, Quit Date, Habits & Cost, Core Reasons, Triggers & Coping Plans, and Medical Disclaimer.
   - Added onboarding gate in root `_layout.tsx` that redirects un-onboarded users while rendering persisted data on the dashboard for onboarded users.
   - Added unit test suites for database migrations, all repositories, and form validation schemas (33 passing tests).
+- **Sprint 2: Motivation Engine & Live Hooks**
+  - Pure domain calculations in `domain/stats.ts` (elapsed duration, cigarettes avoided, money saved, life regained with injectable clock).
+  - Health recovery timeline (14 medical benchmarks from WHO, NHS, CDC) and achievement badges (20 milestone medals) in `domain/healthTimeline.ts` and `domain/milestones.ts`.
+  - Offline content seeding in `src/db/seed/content.ts` with 15 stoic/psychological quotes, 12 evidence-based craving coping strategies (4Ds, 5-4-3-2-1), and milestones populated into `content_items`.
+  - Content repository (`src/db/repositories/content.repo.ts`) providing deterministic daily quote rotation, randomized tips, and category filtering.
+  - Focus- and AppState-aware `useTicker` hook (`src/hooks/use-ticker.ts`) that pauses when minimized or blurred to save battery while synchronizing immediately upon resumption.
+  - `useStats` and `useStatsCore` hooks (`src/hooks/use-stats.ts`) integrating SQLite profile data, real-time ticking, and health milestones.
+  - Comprehensive unit test suites in `content.test.ts` and `hooks.test.ts` (69 passing tests across 8 suites).
+
