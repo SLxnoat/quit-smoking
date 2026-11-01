@@ -224,5 +224,36 @@ describe('Database Repositories', () => {
       expect(triggers.some((t) => t.is_custom === 1)).toBe(false);
       expect(triggers.length).toBeGreaterThan(0);
     });
+
+    it('executes atomic onboarding commit inside db.withTransactionAsync without nested transaction errors', async () => {
+      await expect(
+        db.withTransactionAsync(async () => {
+          await saveProfile(db, {
+            quit_at: Date.now(),
+            cigs_per_day: 15,
+            pack_size: 20,
+            pack_price: 3500,
+            currency: 'LKR',
+            years_smoked: 4,
+            approach: 'cold_turkey',
+            confidence: 8,
+          });
+          await saveReasons(db, ['My health', 'Save money for family']);
+          await setDisclaimerAccepted(db, true);
+          await setOnboardingCompleted(db, true);
+        })
+      ).resolves.not.toThrow();
+
+      const profile = await getProfile(db);
+      expect(profile).not.toBeNull();
+      expect(profile?.currency).toBe('LKR');
+      expect(profile?.pack_price).toBe(3500);
+
+      const reasons = await getReasons(db);
+      expect(reasons).toHaveLength(2);
+
+      expect(await hasAcceptedDisclaimer(db)).toBe(true);
+      expect(await hasCompletedOnboarding(db)).toBe(true);
+    });
   });
 });

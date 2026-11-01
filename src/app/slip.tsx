@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
+import { Ionicons } from '@expo/vector-icons';
 import * as Haptics from 'expo-haptics';
 import { Button, Card, Screen, Text } from '../components';
 import { useTheme } from '../hooks';
@@ -118,7 +119,7 @@ export default function SlipScreen() {
             { backgroundColor: `${theme.colors.primary}22` },
           ]}
         >
-          <Text style={styles.successEmoji}>🌱</Text>
+          <Ionicons name="shield-checkmark-outline" size={54} color={theme.colors.primary} />
         </View>
 
         <Text variant="title1" center style={styles.successTitle}>
@@ -174,9 +175,12 @@ export default function SlipScreen() {
             accessibilityLabel="Close slip support"
             accessibilityRole="button"
           >
-            <Text variant="body" style={{ color: theme.colors.primary, fontSize: 16 }}>
-              ✕ Close
-            </Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+              <Ionicons name="close" size={20} color={theme.colors.primary} />
+              <Text variant="body" style={{ color: theme.colors.primary, fontSize: 16 }}>
+                Close
+              </Text>
+            </View>
           </TouchableOpacity>
           <Text variant="subtitle" style={styles.headerTitle}>
             Slip Support
@@ -187,7 +191,12 @@ export default function SlipScreen() {
         {/* Compassionate Hero Banner */}
         <Card style={[styles.heroCard, { backgroundColor: `${theme.colors.primary}18` }]}>
           <View style={styles.heroRow}>
-            <Text style={styles.heroEmoji}>🤝</Text>
+            <Ionicons
+              name="heart-circle"
+              size={40}
+              color={theme.colors.primary}
+              style={{ marginRight: 12 }}
+            />
             <View style={{ flex: 1 }}>
               <Text variant="title2" style={[styles.heroTitle, { color: theme.colors.primary }]}>
                 A Slip Is Not Failure

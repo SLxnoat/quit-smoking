@@ -24,7 +24,7 @@ export const HabitsSchema = z.object({
   packPrice: z
     .number()
     .positive('Pack price must be greater than 0')
-    .max(500, 'Pack price seems unusually high'),
+    .max(10_000_000, 'Pack price exceeds maximum supported amount'),
   currency: z
     .string()
     .trim()

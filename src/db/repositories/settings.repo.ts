@@ -62,14 +62,12 @@ export async function setDisclaimerAccepted(
   db: SQLiteDatabase,
   accepted: boolean
 ): Promise<void> {
-  await db.withTransactionAsync(async () => {
-    await setSetting(db, SETTINGS_KEYS.DISCLAIMER_ACCEPTED, accepted ? 'true' : 'false');
-    if (accepted) {
-      await setSetting(db, SETTINGS_KEYS.DISCLAIMER_ACCEPTED_AT, Date.now().toString());
-    } else {
-      await deleteSetting(db, SETTINGS_KEYS.DISCLAIMER_ACCEPTED_AT);
-    }
-  });
+  await setSetting(db, SETTINGS_KEYS.DISCLAIMER_ACCEPTED, accepted ? 'true' : 'false');
+  if (accepted) {
+    await setSetting(db, SETTINGS_KEYS.DISCLAIMER_ACCEPTED_AT, Date.now().toString());
+  } else {
+    await deleteSetting(db, SETTINGS_KEYS.DISCLAIMER_ACCEPTED_AT);
+  }
 }
 
 export async function clearAllUserData(db: SQLiteDatabase): Promise<void> {

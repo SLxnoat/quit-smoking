@@ -102,7 +102,7 @@ export function computeNotificationSchedule(
       rawCandidates.push({
         id: `milestone_${m.id}`,
         type: 'milestone',
-        title: 'Health Recovery Milestone Reached! 🎉',
+        title: 'Health Recovery Milestone Reached',
         body: `${m.title}: ${m.description}`,
         triggerTimeMs: adjustedMs,
         localDay,
@@ -123,7 +123,7 @@ export function computeNotificationSchedule(
       rawCandidates.push({
         id: `checkin_${localDay}`,
         type: 'checkin',
-        title: 'Daily Smoke-Free Check-In ☀️',
+        title: 'Daily Smoke-Free Check-In',
         body: 'Take 60 seconds to track your mood, stress, and celebrate your smoke-free day.',
         triggerTimeMs: adjustedMs,
         localDay,

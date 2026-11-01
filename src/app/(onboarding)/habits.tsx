@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
-import { Button, Card, Screen, Text } from '../../components';
+import { Ionicons } from '@expo/vector-icons';
+import { Button, Card, CurrencyPicker, Screen, Text } from '../../components';
 import { t } from '../../i18n';
 import { useOnboardingDraft } from '../../hooks/use-onboarding-draft';
 import { HabitsSchema } from '../../domain/validation';
@@ -67,9 +68,12 @@ export default function HabitsScreen() {
 
         {errorMessage && (
           <Card variant="flat" padding="sm" style={styles.errorCard}>
-            <Text variant="bodySmall" color="danger" center>
-              ⚠️ {errorMessage}
-            </Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+              <Ionicons name="alert-circle" size={16} color={theme.colors.danger} style={{ marginRight: 6 }} />
+              <Text variant="bodySmall" color="danger" center>
+                {errorMessage}
+              </Text>
+            </View>
           </Card>
         )}
 
@@ -104,16 +108,10 @@ export default function HabitsScreen() {
             </View>
 
             <View style={[styles.field, styles.flexHalf]}>
-              <Text variant="bodyMedium" color="primary">
-                {t('onboarding.habits.currencyLabel')}
-              </Text>
-              <TextInput
-                style={inputStyle}
+              <CurrencyPicker
                 value={currency}
-                onChangeText={setCurrency}
-                maxLength={5}
-                placeholder={t('onboarding.habits.currencyPlaceholder')}
-                placeholderTextColor={theme.colors.textTertiary}
+                onSelect={setCurrency}
+                label={t('onboarding.habits.currencyLabel')}
               />
             </View>
           </View>

@@ -17,7 +17,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '20 minutes smoke-free. Heart rate is dropping.',
     category: 'time',
     threshold: 20 * 60,
-    icon: '🌱',
+    icon: 'leaf-outline',
   },
   {
     key: 'ms_1h',
@@ -25,7 +25,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '60 minutes smoke-free. The journey has begun.',
     category: 'time',
     threshold: 60 * 60,
-    icon: '⏱️',
+    icon: 'time-outline',
   },
   {
     key: 'ms_12h',
@@ -33,7 +33,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '12 hours smoke-free. Carbon monoxide cleared.',
     category: 'time',
     threshold: 12 * 3600,
-    icon: '🫁',
+    icon: 'fitness-outline',
   },
   {
     key: 'ms_24h',
@@ -41,7 +41,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '24 hours smoke-free! A monumental first day.',
     category: 'time',
     threshold: 24 * 3600,
-    icon: '⭐',
+    icon: 'star-outline',
   },
   {
     key: 'ms_3d',
@@ -49,7 +49,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '72 hours smoke-free. Nicotine is entirely out of your system.',
     category: 'time',
     threshold: 72 * 3600,
-    icon: '⚡',
+    icon: 'flash-outline',
   },
   {
     key: 'ms_1w',
@@ -57,7 +57,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '7 days smoke-free. Your taste and smell are back.',
     category: 'time',
     threshold: 7 * 86400,
-    icon: '🔥',
+    icon: 'flame-outline',
   },
   {
     key: 'ms_2w',
@@ -65,7 +65,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '14 days smoke-free. Blood circulation is surging.',
     category: 'time',
     threshold: 14 * 86400,
-    icon: '💪',
+    icon: 'barbell-outline',
   },
   {
     key: 'ms_1m',
@@ -73,7 +73,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '30 days smoke-free. Lung cilia actively regenerating.',
     category: 'time',
     threshold: 30 * 86400,
-    icon: '🏆',
+    icon: 'trophy-outline',
   },
   {
     key: 'ms_3m',
@@ -81,7 +81,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '3 months smoke-free. Habitual pathways rewired.',
     category: 'time',
     threshold: 90 * 86400,
-    icon: '🌟',
+    icon: 'sparkles-outline',
   },
   {
     key: 'ms_6m',
@@ -89,7 +89,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '6 months smoke-free. Stress levels lower than ever.',
     category: 'time',
     threshold: 180 * 86400,
-    icon: '🎖️',
+    icon: 'medal-outline',
   },
   {
     key: 'ms_1y',
@@ -97,7 +97,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: '365 days smoke-free. Coronary disease risk cut in half!',
     category: 'time',
     threshold: 365 * 86400,
-    icon: '👑',
+    icon: 'ribbon-outline',
   },
 
   // Craving Milestones (threshold in count of cravings resisted)
@@ -107,7 +107,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Resisted your first craving with mindfulness.',
     category: 'craving',
     threshold: 1,
-    icon: '🌊',
+    icon: 'water-outline',
   },
   {
     key: 'crv_5',
@@ -115,7 +115,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Resisted 5 cravings. You are mastering the wave.',
     category: 'craving',
     threshold: 5,
-    icon: '🏄',
+    icon: 'boat-outline',
   },
   {
     key: 'crv_10',
@@ -123,7 +123,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Resisted 10 cravings. Cravings no longer control you.',
     category: 'craving',
     threshold: 10,
-    icon: '🧘',
+    icon: 'body-outline',
   },
   {
     key: 'crv_25',
@@ -131,7 +131,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Resisted 25 cravings without giving in.',
     category: 'craving',
     threshold: 25,
-    icon: '🛡️',
+    icon: 'shield-checkmark-outline',
   },
   {
     key: 'crv_50',
@@ -139,7 +139,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Resisted 50 cravings. Pure psychological strength.',
     category: 'craving',
     threshold: 50,
-    icon: '💎',
+    icon: 'diamond-outline',
   },
 
   // Money Saved Milestones (threshold in currency units)
@@ -149,7 +149,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Saved $25 by choosing not to buy tobacco.',
     category: 'money',
     threshold: 25,
-    icon: '🪙',
+    icon: 'cash-outline',
   },
   {
     key: 'save_100',
@@ -157,7 +157,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Saved $100. Put it toward something you love.',
     category: 'money',
     threshold: 100,
-    icon: '💵',
+    icon: 'wallet-outline',
   },
   {
     key: 'save_500',
@@ -165,7 +165,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Saved $500 that would have gone up in smoke.',
     category: 'money',
     threshold: 500,
-    icon: '🎁',
+    icon: 'gift-outline',
   },
   {
     key: 'save_1000',
@@ -173,7 +173,7 @@ export const ALL_ACHIEVEMENTS: AchievementDefinition[] = [
     description: 'Over $1,000 saved! A true financial triumph.',
     category: 'money',
     threshold: 1000,
-    icon: '🏦',
+    icon: 'business-outline',
   },
 ];
 

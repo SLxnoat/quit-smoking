@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 import { Button, Card, Screen, Text } from '../../components';
 import { t } from '../../i18n';
 import { useOnboardingDraft } from '../../hooks/use-onboarding-draft';
@@ -54,9 +55,12 @@ export default function ReasonsScreen() {
 
         {error && (
           <Card variant="flat" padding="sm" style={styles.errorCard}>
-            <Text variant="bodySmall" color="danger" center>
-              ⚠️ {error}
-            </Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+              <Ionicons name="alert-circle" size={16} color={theme.colors.danger} style={{ marginRight: 6 }} />
+              <Text variant="bodySmall" color="danger" center>
+                {error}
+              </Text>
+            </View>
           </Card>
         )}
 
@@ -85,18 +89,19 @@ export default function ReasonsScreen() {
                     },
                   ]}
                 >
-                  <Text variant="bodyMedium" color="primary" style={styles.reasonText}>
-                    ✨ {reason}
-                  </Text>
+                  <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1, paddingRight: 8 }}>
+                    <Ionicons name="checkmark-circle" size={16} color={theme.colors.primary} style={{ marginRight: 6 }} />
+                    <Text variant="bodyMedium" color="primary" style={styles.reasonText}>
+                      {reason}
+                    </Text>
+                  </View>
                   <Pressable
                     onPress={() => removeReason(reason)}
                     hitSlop={8}
                     accessibilityRole="button"
                     accessibilityLabel={`Remove reason ${reason}`}
                   >
-                    <Text variant="bodyMedium" color="danger">
-                      ✕
-                    </Text>
+                    <Ionicons name="close-circle-outline" size={20} color={theme.colors.danger} />
                   </Pressable>
                 </View>
               ))}

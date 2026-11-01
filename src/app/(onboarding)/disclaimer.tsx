@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
+import { Ionicons } from '@expo/vector-icons';
 import { Button, Card, Screen, Text } from '../../components';
 import { t } from '../../i18n';
 import { useOnboardingDraft } from '../../hooks/use-onboarding-draft';
@@ -53,9 +54,12 @@ export default function DisclaimerScreen() {
 
         {error && (
           <Card variant="flat" padding="sm" style={styles.errorCard}>
-            <Text variant="bodySmall" color="danger" center>
-              ⚠️ {error}
-            </Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+              <Ionicons name="alert-circle" size={16} color={theme.colors.danger} style={{ marginRight: 6 }} />
+              <Text variant="bodySmall" color="danger" center>
+                {error}
+              </Text>
+            </View>
           </Card>
         )}
 

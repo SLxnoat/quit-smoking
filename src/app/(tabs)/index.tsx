@@ -11,6 +11,7 @@ import { useAchievements } from '../../hooks/use-achievements';
 import { getDailyQuote, type ContentItem } from '../../db/repositories/content.repo';
 import { getTodayCheckin } from '../../db/repositories/checkins.repo';
 import { formatDuration } from '../../domain/stats';
+import { getCurrencySymbol } from '../../domain/currencies';
 
 export default function HomeScreen() {
   const db = useSQLiteContext();
@@ -78,7 +79,8 @@ export default function HomeScreen() {
   const time = stats?.time;
 
   // Format currency symbol or code
-  const currencySymbol = profile.currency === 'USD' ? '$' : `${profile.currency} `;
+  const rawSymbol = getCurrencySymbol(profile.currency);
+  const currencySymbol = rawSymbol.length > 1 ? `${rawSymbol} ` : rawSymbol;
 
   // Formatted ticker string (HH:MM:SS)
   const pad = (n?: number) => (n ?? 0).toString().padStart(2, '0');
@@ -182,21 +184,21 @@ export default function HomeScreen() {
         <StatTile
           label="Saved"
           value={`${currencySymbol}${stats?.moneySaved.toFixed(2) ?? '0.00'}`}
-          icon="💰"
+          icon={<Ionicons name="wallet-outline" size={18} color={theme.colors.accentAmber} style={{ marginRight: 4 }} />}
           accentColor={theme.colors.accentAmber}
         />
         <StatTile
           label="Avoided"
           value={`${stats?.cigsAvoided ?? 0}`}
           subtext="cigs"
-          icon="🚭"
+          icon={<Ionicons name="ban-outline" size={18} color={theme.colors.primary} style={{ marginRight: 4 }} />}
           accentColor={theme.colors.primary}
         />
         <StatTile
           label="Regained"
           value={stats?.lifeRegainedFormatted ?? '0m'}
           subtext="life time"
-          icon="🫁"
+          icon={<Ionicons name="heart-circle-outline" size={18} color={theme.colors.success} style={{ marginRight: 4 }} />}
           accentColor={theme.colors.success}
         />
       </View>

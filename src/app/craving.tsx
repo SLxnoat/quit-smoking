@@ -552,7 +552,7 @@ export default function CravingModalScreen() {
                 accessibilityLabel="Ride the Wave Urge Surfing Timer"
               >
                 <View style={[styles.toolIconBox, { backgroundColor: '#0F9D8A22' }]}>
-                  <Text style={{ fontSize: 24 }}>🌊</Text>
+                  <Ionicons name="water-outline" size={24} color="#0F9D8A" />
                 </View>
                 <View style={styles.toolTextBox}>
                   <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
@@ -579,7 +579,7 @@ export default function CravingModalScreen() {
                 accessibilityLabel="Guided Deep Breathing"
               >
                 <View style={[styles.toolIconBox, { backgroundColor: '#2E9E5B22' }]}>
-                  <Text style={{ fontSize: 24 }}>🫁</Text>
+                  <Ionicons name="fitness-outline" size={24} color="#2E9E5B" />
                 </View>
                 <View style={styles.toolTextBox}>
                   <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
@@ -606,7 +606,7 @@ export default function CravingModalScreen() {
                 accessibilityLabel="Distraction Tools: 4Ds and 5-4-3-2-1 Grounding"
               >
                 <View style={[styles.toolIconBox, { backgroundColor: '#F5A52422' }]}>
-                  <Text style={{ fontSize: 24 }}>🎯</Text>
+                  <Ionicons name="apps-outline" size={24} color="#F5A524" />
                 </View>
                 <View style={styles.toolTextBox}>
                   <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
@@ -633,7 +633,7 @@ export default function CravingModalScreen() {
                 accessibilityLabel="Reach Out: Call Support or Helpline"
               >
                 <View style={[styles.toolIconBox, { backgroundColor: '#3B82F622' }]}>
-                  <Text style={{ fontSize: 24 }}>📞</Text>
+                  <Ionicons name="call-outline" size={24} color="#3B82F6" />
                 </View>
                 <View style={styles.toolTextBox}>
                   <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
@@ -713,7 +713,9 @@ export default function CravingModalScreen() {
 
             {/* Hero Timer Display */}
             <Card variant="elevated" padding="lg" style={styles.timerCard}>
-              <Text style={{ fontSize: 44, textAlign: 'center', marginBottom: 10 }}>🌊</Text>
+              <View style={{ alignItems: 'center', marginBottom: 10 }}>
+                <Ionicons name="water" size={44} color={theme.colors.primary} />
+              </View>
               <Text variant="hero" color="primary" style={styles.timerHeroText}>
                 {Math.floor(surfRemaining / 60)}:
                 {(surfRemaining % 60).toString().padStart(2, '0')}
@@ -1175,7 +1177,12 @@ export default function CravingModalScreen() {
                   accessibilityRole="radio"
                   accessibilityState={{ selected: outcome === 'resisted' }}
                 >
-                  <Text style={{ fontSize: 26, marginRight: 12 }}>🎉</Text>
+                  <Ionicons
+                    name="checkmark-circle"
+                    size={28}
+                    color={theme.colors.success}
+                    style={{ marginRight: 12 }}
+                  />
                   <View style={{ flex: 1 }}>
                     <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
                       I Resisted the Craving!
@@ -1201,7 +1208,12 @@ export default function CravingModalScreen() {
                   accessibilityRole="radio"
                   accessibilityState={{ selected: outcome === 'smoked' }}
                 >
-                  <Text style={{ fontSize: 26, marginRight: 12 }}>🌱</Text>
+                  <Ionicons
+                    name="leaf-outline"
+                    size={28}
+                    color={theme.colors.accentAmber}
+                    style={{ marginRight: 12 }}
+                  />
                   <View style={{ flex: 1 }}>
                     <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
                       I Slipped / Smoked
@@ -1227,7 +1239,12 @@ export default function CravingModalScreen() {
                   accessibilityRole="radio"
                   accessibilityState={{ selected: outcome === 'abandoned' }}
                 >
-                  <Text style={{ fontSize: 26, marginRight: 12 }}>🚪</Text>
+                  <Ionicons
+                    name="close-circle-outline"
+                    size={28}
+                    color={theme.colors.textSecondary}
+                    style={{ marginRight: 12 }}
+                  />
                   <View style={{ flex: 1 }}>
                     <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
                       Abandoned Session
@@ -1250,7 +1267,12 @@ export default function CravingModalScreen() {
                   ]}
                 >
                   <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
-                    <Text style={{ fontSize: 22, marginRight: 8 }}>🤝</Text>
+                    <Ionicons
+                      name="heart-outline"
+                      size={20}
+                      color={theme.colors.accentAmber}
+                      style={{ marginRight: 8 }}
+                    />
                     <Text
                       variant="bodyMedium"
                       style={{ color: theme.colors.textPrimary, fontWeight: '700' }}

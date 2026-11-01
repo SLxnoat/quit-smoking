@@ -477,7 +477,7 @@ export default function JournalScreen() {
                   Mood
                 </Text>
                 <Text variant="bodyMedium" color="brand" style={{ fontWeight: '700' }}>
-                  {mood}/10 &bull; {mood <= 3 ? '😞 Low' : mood <= 6 ? '😐 Neutral' : mood <= 8 ? '😊 Good' : '🌟 Great'}
+                  {mood}/10 &bull; {mood <= 3 ? 'Low' : mood <= 6 ? 'Neutral' : mood <= 8 ? 'Good' : 'Great'}
                 </Text>
               </View>
               <View style={styles.sliderChipsRow}>
@@ -530,7 +530,7 @@ export default function JournalScreen() {
                     color: stress <= 3 ? theme.colors.success : stress <= 6 ? theme.colors.accentAmber : theme.colors.danger,
                   }}
                 >
-                  {stress}/10 &bull; {stress <= 3 ? '😌 Calm' : stress <= 6 ? '😐 Moderate' : stress <= 8 ? '😣 High' : '🚨 Severe'}
+                  {stress}/10 &bull; {stress <= 3 ? 'Calm' : stress <= 6 ? 'Moderate' : stress <= 8 ? 'High' : 'Severe'}
                 </Text>
               </View>
               <View style={styles.sliderChipsRow}>
@@ -577,7 +577,7 @@ export default function JournalScreen() {
                   Smoke-Free Confidence
                 </Text>
                 <Text variant="bodyMedium" color="brand" style={{ fontWeight: '700' }}>
-                  {confidence}/10 &bull; {confidence <= 3 ? '😟 Wavering' : confidence <= 6 ? '✊ Steady' : confidence <= 8 ? '💪 Resilient' : '🛡️ Unshakeable'}
+                  {confidence}/10 &bull; {confidence <= 3 ? 'Wavering' : confidence <= 6 ? 'Steady' : confidence <= 8 ? 'Resilient' : 'Unshakeable'}
                 </Text>
               </View>
               <View style={styles.sliderChipsRow}>
@@ -624,7 +624,7 @@ export default function JournalScreen() {
                   Sleep Quality
                 </Text>
                 <Text variant="bodyMedium" color="brand" style={{ fontWeight: '700' }}>
-                  {sleepQuality}/10 &bull; {sleepQuality <= 3 ? '🥱 Restless' : sleepQuality <= 6 ? '🛏️ Fair' : sleepQuality <= 8 ? '😴 Restful' : '🌙 Deep Sleep'}
+                  {sleepQuality}/10 &bull; {sleepQuality <= 3 ? 'Restless' : sleepQuality <= 6 ? 'Fair' : sleepQuality <= 8 ? 'Restful' : 'Deep Sleep'}
                 </Text>
               </View>
               <View style={styles.sliderChipsRow}>
@@ -992,7 +992,7 @@ export default function JournalScreen() {
             {/* History Feed */}
             {filteredHistory.length === 0 ? (
               <EmptyState
-                icon="📖"
+                icon="book-outline"
                 title="Your Journal is Empty"
                 description="Complete your first daily check-in or CBT thought record to begin building your emotional archive."
                 actionTitle="Complete Today's Check-In"
@@ -1127,7 +1127,7 @@ export default function JournalScreen() {
             {outcomeData && (
               <Card variant="flat" padding="md" style={styles.outcomeBanner}>
                 <View style={styles.outcomeHeaderRow}>
-                  <Text style={{ fontSize: 28 }}>🛡️</Text>
+                  <Ionicons name="shield-checkmark" size={28} color={theme.colors.primary} />
                   <View style={{ flex: 1, marginLeft: 10 }}>
                     <Text variant="subtitle" color="primary">
                       Craving Success Rate

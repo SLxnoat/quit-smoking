@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 import { Button, Card, Screen, Text } from '../../components';
 import { t } from '../../i18n';
 import { useOnboardingDraft } from '../../hooks/use-onboarding-draft';
+import { useTheme } from '../../hooks/use-theme';
 
 export default function QuitDateScreen() {
+  const { theme } = useTheme();
   const { draft, setQuitAt } = useOnboardingDraft();
   const [selectedPreset, setSelectedPreset] = useState<'now' | '1d' | '3d' | '7d'>('now');
 
@@ -61,10 +64,18 @@ export default function QuitDateScreen() {
             onPress={() => handleSelectPreset('now')}
             style={selectedPreset === 'now' ? styles.selectedCard : undefined}
           >
-            <Text variant="subtitle" color={selectedPreset === 'now' ? 'brand' : 'primary'}>
-              ✨ {t('onboarding.quitDate.optionJustNow')}
-            </Text>
-            <Text variant="bodySmall" color="secondary">
+            <View style={styles.optionHeaderRow}>
+              <Ionicons
+                name="sparkles"
+                size={18}
+                color={selectedPreset === 'now' ? theme.colors.primary : theme.colors.textSecondary}
+                style={{ marginRight: 8 }}
+              />
+              <Text variant="subtitle" color={selectedPreset === 'now' ? 'brand' : 'primary'}>
+                {t('onboarding.quitDate.optionJustNow')}
+              </Text>
+            </View>
+            <Text variant="bodySmall" color="secondary" style={styles.optionDesc}>
               {t('onboarding.quitDate.optionJustNowDesc')}
             </Text>
           </Card>
@@ -75,10 +86,18 @@ export default function QuitDateScreen() {
             onPress={() => handleSelectPreset('1d')}
             style={selectedPreset === '1d' ? styles.selectedCard : undefined}
           >
-            <Text variant="subtitle" color={selectedPreset === '1d' ? 'brand' : 'primary'}>
-              ⏳ 1 day ago (24 hours)
-            </Text>
-            <Text variant="bodySmall" color="secondary">
+            <View style={styles.optionHeaderRow}>
+              <Ionicons
+                name="time-outline"
+                size={18}
+                color={selectedPreset === '1d' ? theme.colors.primary : theme.colors.textSecondary}
+                style={{ marginRight: 8 }}
+              />
+              <Text variant="subtitle" color={selectedPreset === '1d' ? 'brand' : 'primary'}>
+                1 day ago (24 hours)
+              </Text>
+            </View>
+            <Text variant="bodySmall" color="secondary" style={styles.optionDesc}>
               Already made it past the first critical day.
             </Text>
           </Card>
@@ -89,10 +108,18 @@ export default function QuitDateScreen() {
             onPress={() => handleSelectPreset('3d')}
             style={selectedPreset === '3d' ? styles.selectedCard : undefined}
           >
-            <Text variant="subtitle" color={selectedPreset === '3d' ? 'brand' : 'primary'}>
-              💪 3 days ago (72 hours)
-            </Text>
-            <Text variant="bodySmall" color="secondary">
+            <View style={styles.optionHeaderRow}>
+              <Ionicons
+                name="flame-outline"
+                size={18}
+                color={selectedPreset === '3d' ? theme.colors.primary : theme.colors.accentAmber}
+                style={{ marginRight: 8 }}
+              />
+              <Text variant="subtitle" color={selectedPreset === '3d' ? 'brand' : 'primary'}>
+                3 days ago (72 hours)
+              </Text>
+            </View>
+            <Text variant="bodySmall" color="secondary" style={styles.optionDesc}>
               Physical nicotine withdrawal is at its turning point.
             </Text>
           </Card>
@@ -103,10 +130,18 @@ export default function QuitDateScreen() {
             onPress={() => handleSelectPreset('7d')}
             style={selectedPreset === '7d' ? styles.selectedCard : undefined}
           >
-            <Text variant="subtitle" color={selectedPreset === '7d' ? 'brand' : 'primary'}>
-              🏆 1 week ago
-            </Text>
-            <Text variant="bodySmall" color="secondary">
+            <View style={styles.optionHeaderRow}>
+              <Ionicons
+                name="trophy-outline"
+                size={18}
+                color={selectedPreset === '7d' ? theme.colors.primary : theme.colors.success}
+                style={{ marginRight: 8 }}
+              />
+              <Text variant="subtitle" color={selectedPreset === '7d' ? 'brand' : 'primary'}>
+                1 week ago
+              </Text>
+            </View>
+            <Text variant="bodySmall" color="secondary" style={styles.optionDesc}>
               A full week smoke-free. Your taste and smell are returning.
             </Text>
           </Card>
@@ -155,6 +190,14 @@ const styles = StyleSheet.create({
   selectedCard: {
     borderColor: '#0F9D8A',
     borderWidth: 2,
+  },
+  optionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  optionDesc: {
+    marginLeft: 26,
   },
   summaryCard: {
     alignItems: 'center',

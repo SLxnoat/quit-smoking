@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { Card } from './card';
 import { Text } from './text';
 import { Button } from './button';
 import { useTheme } from '../hooks/use-theme';
 
 export interface EmptyStateProps {
-  icon?: string;
+  icon?: React.ReactNode;
   title: string;
   description: string;
   actionTitle?: string;
@@ -15,7 +16,7 @@ export interface EmptyStateProps {
 }
 
 export function EmptyState({
-  icon = '📝',
+  icon,
   title,
   description,
   actionTitle,
@@ -23,6 +24,16 @@ export function EmptyState({
   style,
 }: EmptyStateProps) {
   const { theme } = useTheme();
+
+  const renderedIcon = icon ? (
+    React.isValidElement(icon) ? (
+      icon
+    ) : typeof icon === 'string' ? (
+      <Ionicons name={icon as any} size={32} color={theme.colors.primary} />
+    ) : null
+  ) : (
+    <Ionicons name="document-text-outline" size={32} color={theme.colors.primary} />
+  );
 
   return (
     <Card
@@ -45,7 +56,7 @@ export function EmptyState({
           { backgroundColor: `${theme.colors.primary}18` },
         ]}
       >
-        <Text style={styles.icon}>{icon}</Text>
+        {renderedIcon}
       </View>
       <Text variant="title3" color="primary" center style={styles.title}>
         {title}

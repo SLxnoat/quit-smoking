@@ -69,6 +69,24 @@ describe('Onboarding Form Validation (Zod)', () => {
       const result = HabitsSchema.safeParse(invalid);
       expect(result.success).toBe(false);
     });
+
+    it('accepts international currency pack prices without unusually high warning', () => {
+      const lkrPrice = {
+        cigsPerDay: 20,
+        packSize: 20,
+        packPrice: 3500, // LKR
+        currency: 'LKR',
+      };
+      expect(HabitsSchema.safeParse(lkrPrice).success).toBe(true);
+
+      const idrPrice = {
+        cigsPerDay: 16,
+        packSize: 16,
+        packPrice: 45000, // IDR
+        currency: 'IDR',
+      };
+      expect(HabitsSchema.safeParse(idrPrice).success).toBe(true);
+    });
   });
 
   describe('ReasonsSchema', () => {

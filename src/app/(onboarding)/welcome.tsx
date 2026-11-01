@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 import { Button, Card, Screen, Text } from '../../components';
 import { t } from '../../i18n';
+import { useTheme } from '../../hooks/use-theme';
 
 export default function WelcomeScreen() {
+  const { theme } = useTheme();
 
   return (
     <Screen scrollable>
@@ -23,27 +26,36 @@ export default function WelcomeScreen() {
 
         <View style={styles.features}>
           <Card variant="flat" padding="md" style={styles.featureCard}>
-            <Text variant="bodyMedium" color="primary">
-              🔒 {t('onboarding.welcome.featureOffline')}
-            </Text>
+            <View style={styles.featureHeaderRow}>
+              <Ionicons name="shield-checkmark-outline" size={20} color={theme.colors.primary} style={{ marginRight: 8 }} />
+              <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
+                {t('onboarding.welcome.featureOffline')}
+              </Text>
+            </View>
             <Text variant="bodySmall" color="secondary" style={styles.featureText}>
               {t('onboarding.welcome.featureOfflineDesc')}
             </Text>
           </Card>
 
           <Card variant="flat" padding="md" style={styles.featureCard}>
-            <Text variant="bodyMedium" color="primary">
-              🧠 {t('onboarding.welcome.featureEvidence')}
-            </Text>
+            <View style={styles.featureHeaderRow}>
+              <Ionicons name="medical-outline" size={20} color={theme.colors.primary} style={{ marginRight: 8 }} />
+              <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
+                {t('onboarding.welcome.featureEvidence')}
+              </Text>
+            </View>
             <Text variant="bodySmall" color="secondary" style={styles.featureText}>
               {t('onboarding.welcome.featureEvidenceDesc')}
             </Text>
           </Card>
 
           <Card variant="flat" padding="md" style={styles.featureCard}>
-            <Text variant="bodyMedium" color="primary">
-              🌱 {t('onboarding.welcome.featureCompassion')}
-            </Text>
+            <View style={styles.featureHeaderRow}>
+              <Ionicons name="heart-outline" size={20} color={theme.colors.primary} style={{ marginRight: 8 }} />
+              <Text variant="bodyMedium" color="primary" style={{ fontWeight: '700' }}>
+                {t('onboarding.welcome.featureCompassion')}
+              </Text>
+            </View>
             <Text variant="bodySmall" color="secondary" style={styles.featureText}>
               {t('onboarding.welcome.featureCompassionDesc')}
             </Text>
@@ -93,6 +105,10 @@ const styles = StyleSheet.create({
   },
   featureCard: {
     gap: 6,
+  },
+  featureHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   featureText: {
     lineHeight: 20,

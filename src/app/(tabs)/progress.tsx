@@ -18,6 +18,7 @@ import {
   type AchievementDefinition,
 } from '../../domain/milestones';
 import { formatDuration } from '../../domain/stats';
+import { getCurrencySymbol } from '../../domain/currencies';
 import { GoalSchema } from '../../domain/validation';
 
 type ActiveView = 'timeline' | 'badges' | 'goals';
@@ -77,7 +78,8 @@ export default function ProgressScreen() {
     return count;
   }, [unlockedKeys]);
 
-  const currencySymbol = profile?.currency === 'USD' ? '$' : `${profile?.currency ?? '$'} `;
+  const rawSymbol = getCurrencySymbol(profile?.currency ?? '$');
+  const currencySymbol = rawSymbol.length > 1 ? `${rawSymbol} ` : rawSymbol;
 
   const handleCreateGoal = async () => {
     setGoalError(null);
@@ -457,7 +459,28 @@ export default function ProgressScreen() {
                   ]}
                 >
                   <View style={styles.badgeTopRow}>
-                    <Text style={styles.badgeIcon}>{badge.icon}</Text>
+                    <View
+                      style={[
+                        styles.badgeIconWrapper,
+                        {
+                          backgroundColor: isUnlocked
+                            ? `${theme.colors.accentAmber}18`
+                            : theme.isDark
+                            ? '#1E293B'
+                            : '#F1F5F9',
+                        },
+                      ]}
+                    >
+                      {badge.icon?.includes('-') || (badge.icon && badge.icon in Ionicons.glyphMap) ? (
+                        <Ionicons
+                          name={(badge.icon as any) || 'ribbon-outline'}
+                          size={24}
+                          color={isUnlocked ? theme.colors.accentAmber : theme.colors.textSecondary}
+                        />
+                      ) : (
+                        <Text style={styles.badgeIcon}>{badge.icon}</Text>
+                      )}
+                    </View>
                     {isUnlocked ? (
                       <View
                         style={[
@@ -516,7 +539,7 @@ export default function ProgressScreen() {
                   { backgroundColor: `${theme.colors.accentAmber}22` },
                 ]}
               >
-                <Text style={{ fontSize: 28 }}>🎁</Text>
+                <Ionicons name="gift-outline" size={26} color={theme.colors.accentAmber} />
               </View>
             </View>
             <Text variant="caption" color="secondary" style={{ marginTop: 6 }}>
@@ -613,7 +636,7 @@ export default function ProgressScreen() {
           {/* Goals List */}
           {goals.length === 0 ? (
             <Card variant="flat" padding="lg" style={styles.emptyGoalsCard}>
-              <Text style={{ fontSize: 36, textAlign: 'center', marginBottom: 8 }}>🎯</Text>
+              <Ionicons name="flag-outline" size={36} color={theme.colors.primary} style={{ alignSelf: 'center', marginBottom: 8 }} />
               <Text variant="bodyMedium" color="primary" style={{ textAlign: 'center', fontWeight: '600' }}>
                 No goals created yet
               </Text>
@@ -659,9 +682,12 @@ export default function ProgressScreen() {
                             { backgroundColor: `${theme.colors.success}22` },
                           ]}
                         >
-                          <Text variant="caption" color="success" style={{ fontWeight: '700' }}>
-                            Achieved 🎉
-                          </Text>
+                          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Ionicons name="checkmark-circle" size={13} color={theme.colors.success} style={{ marginRight: 3 }} />
+                            <Text variant="caption" color="success" style={{ fontWeight: '700' }}>
+                              Achieved
+                            </Text>
+                          </View>
                         </View>
                       ) : (
                         <Text variant="caption" color="brand" style={{ fontWeight: '700' }}>
@@ -882,6 +908,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+  },
+  badgeIconWrapper: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   badgeIcon: {
     fontSize: 28,

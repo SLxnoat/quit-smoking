@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Switch, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 import { Button, Card, Screen, Text } from '../../components';
 import { t } from '../../i18n';
 import { useOnboardingDraft } from '../../hooks/use-onboarding-draft';
@@ -89,9 +90,12 @@ export default function TriggersScreen() {
           {draft.customTriggers.map((ct) => (
             <Card key={ct.label} variant="outlined" padding="md" style={styles.triggerCard}>
               <View style={styles.triggerHeader}>
-                <Text variant="subtitle" color="brand" style={styles.label}>
-                  ⭐ {ct.label}
-                </Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <Ionicons name="star" size={16} color={theme.colors.accentAmber} style={{ marginRight: 6 }} />
+                  <Text variant="subtitle" color="brand" style={styles.label}>
+                    {ct.label}
+                  </Text>
+                </View>
               </View>
               {ct.copingPlan && (
                 <View

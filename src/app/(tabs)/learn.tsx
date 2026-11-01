@@ -502,7 +502,7 @@ export default function LearnScreen() {
         <View style={styles.tabContentSection}>
           {filterList(articlesList).length === 0 ? (
             <EmptyState
-              icon="📚"
+              icon="book-outline"
               title="No Articles Found"
               description="No articles matched your current search query."
               actionTitle="Clear Search"
@@ -567,7 +567,7 @@ export default function LearnScreen() {
         <View style={styles.tabContentSection}>
           {filterList(exercisesList).length === 0 ? (
             <EmptyState
-              icon="🧘"
+              icon="fitness-outline"
               title="No Exercises Found"
               description="No exercises matched your current search query."
               actionTitle="Clear Search"
@@ -632,7 +632,7 @@ export default function LearnScreen() {
         <View style={styles.tabContentSection}>
           {bookmarkedItems.length === 0 ? (
             <EmptyState
-              icon="🔖"
+              icon="bookmark-outline"
               title="No Bookmarks Yet"
               description="Tap the bookmark icon on any lesson, article, or exercise to save it here for quick access."
               actionTitle="Explore 30-Day Path"

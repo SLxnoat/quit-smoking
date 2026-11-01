@@ -12,7 +12,7 @@ import {
 import { router } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
 import { Ionicons } from '@expo/vector-icons';
-import { Button, Card, Screen, Text } from '../../components';
+import { Button, Card, CurrencyPicker, Screen, Text } from '../../components';
 import { useTheme } from '../../hooks/use-theme';
 import { useAppLock } from '../../hooks/use-app-lock';
 import {
@@ -425,24 +425,19 @@ export default function SettingsScreen() {
 
           {/* Currency */}
           <View style={styles.inputGroup}>
-            <Text variant="bodySmall" color="secondary">
-              Currency Code
-            </Text>
-            <TextInput
-              style={[
-                styles.textInput,
-                {
-                  backgroundColor: theme.isDark ? '#142125' : '#F0F5F3',
-                  borderColor: formErrors.currency ? theme.colors.danger : theme.colors.cardBorder,
-                  color: theme.colors.text,
-                },
-              ]}
-              autoCapitalize="characters"
-              maxLength={4}
+            <CurrencyPicker
               value={currency}
-              onChangeText={setCurrency}
-              placeholder="USD"
-              placeholderTextColor={theme.colors.textSecondary}
+              onSelect={(code) => {
+                setCurrency(code);
+                if (formErrors.currency) {
+                  setFormErrors((prev) => {
+                    const next = { ...prev };
+                    delete next.currency;
+                    return next;
+                  });
+                }
+              }}
+              label="Currency"
             />
             {formErrors.currency && (
               <Text variant="caption" color="danger">

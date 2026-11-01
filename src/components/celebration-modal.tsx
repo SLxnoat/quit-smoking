@@ -5,6 +5,7 @@ import {
   View,
   Pressable,
 } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import * as Haptics from 'expo-haptics';
 import Animated, {
   useSharedValue,
@@ -104,11 +105,19 @@ export function CelebrationModal({
         >
           {/* Confetti / Burst Header */}
           <View style={styles.badgeHeader}>
-            <Text style={styles.sparkleLeft}>✨</Text>
+            <Ionicons name="sparkles" size={24} color={theme.colors.accentAmber} style={{ marginRight: 10 }} />
             <Animated.View style={[styles.iconWrapper, animatedIconStyle]}>
-              <Text style={styles.icon}>{achievement.icon}</Text>
+              {achievement.icon?.includes('-') || (achievement.icon && achievement.icon in Ionicons.glyphMap) ? (
+                <Ionicons
+                  name={(achievement.icon as any) || 'ribbon-outline'}
+                  size={44}
+                  color={theme.colors.accentAmber}
+                />
+              ) : (
+                <Text style={styles.icon}>{achievement.icon}</Text>
+              )}
             </Animated.View>
-            <Text style={styles.sparkleRight}>🎉</Text>
+            <Ionicons name="sparkles" size={24} color={theme.colors.accentAmber} style={{ marginLeft: 10 }} />
           </View>
 
           <View style={styles.content}>

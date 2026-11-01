@@ -9,3 +9,4 @@ export * from './heatmap-chart';
 export * from './triggers-chart';
 export * from './mood-chart';
 export * from './lock-screen';
+export * from './currency-picker';
