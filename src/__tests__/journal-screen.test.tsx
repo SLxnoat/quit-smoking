@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, screen, fireEvent, act } from '@testing-library/react-native';
+import { render, screen, fireEvent } from '@testing-library/react-native';
 import { ThemeProvider } from '../hooks/use-theme';
 import JournalScreen from '../app/(tabs)/journal';
 
@@ -32,6 +32,8 @@ jest.mock('@expo/vector-icons', () => ({
 }));
 
 // Mock SQLite db
+let mockTodayCheckin: any = null;
+
 const mockDb = {
   getAllAsync: jest.fn().mockImplementation(async (query: string) => {
     if (query.includes('FROM checkins')) {
@@ -86,11 +88,25 @@ const mockDb = {
   }),
   getFirstAsync: jest.fn().mockImplementation(async (query: string) => {
     if (query.includes('FROM checkins WHERE day = ?')) {
-      return null;
+      return mockTodayCheckin;
     }
     return null;
   }),
-  runAsync: jest.fn().mockResolvedValue({ changes: 1, lastInsertRowId: 1 }),
+  runAsync: jest.fn().mockImplementation(async (query: string) => {
+    if (query.includes('INSERT INTO checkins')) {
+      mockTodayCheckin = {
+        id: 1,
+        day: '2026-11-02',
+        mood: 7,
+        stress: 4,
+        confidence: 8,
+        sleep_quality: 7,
+        note: 'Resisted cravings after lunch',
+        created_at: 1730480000,
+      };
+    }
+    return { changes: 1, lastInsertRowId: 1 };
+  }),
 };
 
 jest.mock('expo-sqlite', () => ({
@@ -100,6 +116,7 @@ jest.mock('expo-sqlite', () => ({
 describe('JournalScreen (Sprint 4)', () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    mockTodayCheckin = null;
   });
 
   afterEach(() => {
@@ -130,14 +147,12 @@ describe('JournalScreen (Sprint 4)', () => {
     expect(await screen.findByText('Journal & Insights')).toBeTruthy();
 
     const noteInput = screen.getByLabelText('Daily reflection note');
-    await act(async () => {
-      fireEvent.changeText(noteInput, 'Resisted cravings after lunch');
-    });
+    await fireEvent.changeText(noteInput, 'Resisted cravings after lunch');
 
     const saveButton = screen.getByLabelText('Save check-in');
-    await act(async () => {
-      fireEvent.press(saveButton);
-    });
+    await fireEvent.press(saveButton);
+
+    expect(screen.getByText(/Today's check-in saved!/i)).toBeTruthy();
 
     expect(mockDb.runAsync).toHaveBeenCalled();
     const hasCheckinInsert = mockDb.runAsync.mock.calls.some((call: any[]) =>
@@ -156,9 +171,7 @@ describe('JournalScreen (Sprint 4)', () => {
     expect(await screen.findByText('Journal & Insights')).toBeTruthy();
 
     const thoughtsTab = screen.getByLabelText('CBT thought record tab');
-    await act(async () => {
-      fireEvent.press(thoughtsTab);
-    });
+    await fireEvent.press(thoughtsTab);
 
     expect(await screen.findByLabelText('Situation input')).toBeTruthy();
 
@@ -166,16 +179,14 @@ describe('JournalScreen (Sprint 4)', () => {
     const thoughtInput = screen.getByLabelText('Automatic thought input');
     const reframeInput = screen.getByLabelText('Cognitive reframe input');
 
-    await act(async () => {
-      fireEvent.changeText(situationInput, 'Saw a coworker smoking');
-      fireEvent.changeText(thoughtInput, 'I miss joining them');
-      fireEvent.changeText(reframeInput, 'I am building healthy lungs and saving money');
-    });
+    await fireEvent.changeText(situationInput, 'Saw a coworker smoking');
+    await fireEvent.changeText(thoughtInput, 'I miss joining them');
+    await fireEvent.changeText(reframeInput, 'I am building healthy lungs and saving money');
 
     const saveThoughtButton = screen.getByLabelText('Save CBT Thought Record');
-    await act(async () => {
-      fireEvent.press(saveThoughtButton);
-    });
+    await fireEvent.press(saveThoughtButton);
+
+    expect(screen.getByText(/CBT Thought Record saved successfully!/i)).toBeTruthy();
 
     expect(mockDb.runAsync).toHaveBeenCalled();
     const hasThoughtInsert = mockDb.runAsync.mock.calls.some((call: any[]) =>
@@ -194,9 +205,7 @@ describe('JournalScreen (Sprint 4)', () => {
     expect(await screen.findByText('Journal & Insights')).toBeTruthy();
 
     const historyTab = screen.getByLabelText('Journal history list');
-    await act(async () => {
-      fireEvent.press(historyTab);
-    });
+    await fireEvent.press(historyTab);
 
     expect(await screen.findByText('“Feeling strong today”')).toBeTruthy();
     expect(screen.getByText(/Work stress deadline/)).toBeTruthy();
@@ -212,9 +221,7 @@ describe('JournalScreen (Sprint 4)', () => {
     expect(await screen.findByText('Journal & Insights')).toBeTruthy();
 
     const insightsTab = screen.getByLabelText('Analytics and insights charts tab');
-    await act(async () => {
-      fireEvent.press(insightsTab);
-    });
+    await fireEvent.press(insightsTab);
 
     expect(await screen.findByText('Urge Frequency')).toBeTruthy();
     expect(screen.getByText('Top Craving Triggers')).toBeTruthy();

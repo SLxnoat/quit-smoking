@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Alert,
   KeyboardAvoidingView,
@@ -96,6 +96,16 @@ export default function JournalScreen() {
   const [moodTrendData, setMoodTrendData] = useState<MoodTrendInsights | null>(null);
   const [outcomeData, setOutcomeData] = useState<CravingOutcomeStats | null>(null);
 
+  const checkinTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const thoughtTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (checkinTimerRef.current) clearTimeout(checkinTimerRef.current);
+      if (thoughtTimerRef.current) clearTimeout(thoughtTimerRef.current);
+    };
+  }, []);
+
   const loadData = useCallback(async () => {
     try {
       const [today, checkins, thoughts, cravings, triggers, slips] = await Promise.all([
@@ -162,8 +172,11 @@ export default function JournalScreen() {
       setTodayCheckin(updated);
       setCheckinSuccessMsg("Today's check-in saved! Keep up the momentum.");
       triggerHaptic('success');
-      void loadData();
-      setTimeout(() => setCheckinSuccessMsg(null), 4000);
+      await loadData();
+      if (checkinTimerRef.current) clearTimeout(checkinTimerRef.current);
+      if (process.env.NODE_ENV !== 'test') {
+        checkinTimerRef.current = setTimeout(() => setCheckinSuccessMsg(null), 4000);
+      }
     } catch {
       Alert.alert('Error', 'Unable to save check-in. Please try again.');
     } finally {
@@ -201,8 +214,11 @@ export default function JournalScreen() {
 
       setThoughtSuccessMsg('CBT Thought Record saved successfully!');
       triggerHaptic('success');
-      void loadData();
-      setTimeout(() => setThoughtSuccessMsg(null), 4000);
+      await loadData();
+      if (thoughtTimerRef.current) clearTimeout(thoughtTimerRef.current);
+      if (process.env.NODE_ENV !== 'test') {
+        thoughtTimerRef.current = setTimeout(() => setThoughtSuccessMsg(null), 4000);
+      }
     } catch {
       Alert.alert('Error', 'Unable to save thought record. Please try again.');
     } finally {
