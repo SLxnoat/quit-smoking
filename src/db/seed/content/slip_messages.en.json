@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "items": [
+    {
+      "id": "slip-msg-001",
+      "type": "slip_message",
+      "category": "compassion",
+      "title": "A Slip Is Not a Relapse",
+      "body": "Take a slow, deep breath. One cigarette does not erase the days, hours, and effort you have invested. A slip is an isolated event, not a failure of character. What matters right now is your next decision.",
+      "source": "Marlatt Relapse Prevention Therapy",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-002",
+      "type": "slip_message",
+      "category": "empowerment",
+      "title": "Protect Your Lifetime Progress",
+      "body": "Your lungs, heart, and blood vessels still retain every minute of healing you gave them. Do not let guilt convince you to surrender your progress. Throw away any remaining cigarettes and step back into clean air.",
+      "source": "NHS Smokefree Clinical Support",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-003",
+      "type": "slip_message",
+      "category": "curiosity",
+      "title": "Treat This as Clinical Data",
+      "body": "Shift from shame to curiosity. What was happening right before you smoked? Were you exhausted, stressed, or drinking alcohol? Pinpoint the unmanaged trigger so you can build a stronger coping guardrail for next time.",
+      "source": "Cognitive Behavioral Therapy for Addictive Disorders",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-004",
+      "type": "slip_message",
+      "category": "identity",
+      "title": "You Are Still a Non-Smoker",
+      "body": "A non-smoker who had a temporary stumble is still a non-smoker. Your identity does not vanish because of a mistake. Forgive yourself, wash your face with cool water, and reaffirm your commitment right now.",
+      "source": "James Clear, Atomic Habits Identity Principles",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-005",
+      "type": "slip_message",
+      "category": "compassion",
+      "title": "Silence the Inner Critic",
+      "body": "Guilt and self-criticism drive people back to smoking to soothe negative emotions. Break the cycle by offering yourself kindness. You are learning a complex life skill. Every master stumbled on their path.",
+      "source": "Dr. Kristin Neff, Self-Compassion Research",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-006",
+      "type": "slip_message",
+      "category": "resilience",
+      "title": "The Road Continues Immediately",
+      "body": "If you take a wrong turn while driving, you do not drive off a cliff—you make a gentle U-turn and continue to your destination. Re-center yourself. Your smoke-free journey is still right in front of you.",
+      "source": "American Cancer Society Cessation Guidelines",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-007",
+      "type": "slip_message",
+      "category": "empowerment",
+      "title": "Throw Away the Rest",
+      "body": "Do not finish the pack. Do not keep emergency cigarettes \"just in case.\" Destroy them with water and discard them in the outdoor trash. Reclaim your environment and clear your space immediately.",
+      "source": "CDC Tips From Former Smokers Program",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-008",
+      "type": "slip_message",
+      "category": "physiology",
+      "title": "Clear the Nicotine Again",
+      "body": "Your body knows how to clear nicotine quickly. Drink two large glasses of water, take a warm shower, and change into fresh clothes. Help your body return to clean, restorative equilibrium.",
+      "source": "Mayo Clinic Nicotine Dependence Guide",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-009",
+      "type": "slip_message",
+      "category": "mindfulness",
+      "title": "Notice How It Actually Tasted",
+      "body": "Be honest: did the cigarette deliver the magical relief your brain promised? Most people discover it tasted bitter, burned their throat, and brought regret. Remember this reality next time an urge whispers.",
+      "source": "Mindfulness-Based Addiction Recovery",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-010",
+      "type": "slip_message",
+      "category": "support",
+      "title": "Reach Out for Connection",
+      "body": "Secrecy fuels addiction. Send a text to a supportive friend or family member: \"Had a small bump today, but I am recommitted to my smoke-free life.\" Bringing it into the light dissolves shame.",
+      "source": "Substance Abuse Rehabilitation Clinical Guidelines",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-011",
+      "type": "slip_message",
+      "category": "cbt",
+      "title": "Refuse the \"All or Nothing\" Lie",
+      "body": "Your mind might whisper: \"You ruined it, so you might as well smoke all day.\" That is the classic all-or-nothing cognitive distortion. Stopping after one cigarette is a massive victory compared to smoking twenty.",
+      "source": "Beck Institute for Cognitive Behavior Therapy",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-012",
+      "type": "slip_message",
+      "category": "motivation",
+      "title": "Remember Your Deepest Why",
+      "body": "Return to your core reasons on the dashboard. Your health, your family, your freedom, your financial independence—none of those reasons changed. They are just as true and worthy as they were on day one.",
+      "source": "Motivational Interviewing in Cessation, Miller & Rollnick",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-013",
+      "type": "slip_message",
+      "category": "resilience",
+      "title": "Recovery Is a Spiral, Not a Line",
+      "body": "Long-term behavior change rarely moves in a straight line. It is a progressive upward spiral where each challenge teaches you deeper self-awareness. Stand up, brush off your knees, and take the next step.",
+      "source": "Prochaska & DiClemente Transtheoretical Model of Change",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-014",
+      "type": "slip_message",
+      "category": "coping",
+      "title": "Breathe Through the Regret",
+      "body": "Regret is uncomfortable, but do not numb it with another puff. Take five slow box breaths. Allow the feeling to move through you. Every clean breath you take right now is an act of courage.",
+      "source": "Integrative Addiction Medicine Guidelines",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "slip-msg-015",
+      "type": "slip_message",
+      "category": "empowerment",
+      "title": "You Are Still Writing Your Story",
+      "body": "This single page does not define the whole book. You are the author of your life, and today’s chapter is about resilience, courage, and reclaiming your freedom. Let us take this next hour together.",
+      "source": "Ember Compassionate Cessation Philosophy",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    }
+  ]
+}

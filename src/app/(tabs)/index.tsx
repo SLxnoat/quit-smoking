@@ -9,6 +9,7 @@ import { useTheme } from '../../hooks/use-theme';
 import { useStats } from '../../hooks/use-stats';
 import { useAchievements } from '../../hooks/use-achievements';
 import { getDailyQuote, type ContentItem } from '../../db/repositories/content.repo';
+import { getTodayCheckin } from '../../db/repositories/checkins.repo';
 import { formatDuration } from '../../domain/stats';
 
 export default function HomeScreen() {
@@ -22,6 +23,7 @@ export default function HomeScreen() {
   } = useAchievements();
 
   const [dailyQuote, setDailyQuote] = useState<ContentItem | null>(null);
+  const [hasCheckedInToday, setHasCheckedInToday] = useState(false);
 
   useEffect(() => {
     if (!stats) return;
@@ -33,7 +35,7 @@ export default function HomeScreen() {
 
   useEffect(() => {
     let isMounted = true;
-    async function loadQuote() {
+    async function loadData() {
       try {
         const quote = await getDailyQuote(db);
         if (isMounted) {
@@ -42,8 +44,17 @@ export default function HomeScreen() {
       } catch {
         // Fallback gracefully if database busy
       }
+
+      try {
+        const todayCheckin = await getTodayCheckin(db);
+        if (isMounted) {
+          setHasCheckedInToday(!!todayCheckin);
+        }
+      } catch {
+        // Fallback gracefully
+      }
     }
-    void loadQuote();
+    void loadData();
     return () => {
       isMounted = false;
     };
@@ -246,6 +257,38 @@ export default function HomeScreen() {
         </TouchableOpacity>
       )}
 
+      {/* Daily Check-In Prompt */}
+      {!hasCheckedInToday && (
+        <TouchableOpacity
+          activeOpacity={0.88}
+          onPress={() => router.push('/journal' as any)}
+          accessibilityRole="button"
+          accessibilityLabel="Daily check-in: How are you feeling today? Tap to record mood, stress, and confidence."
+        >
+          <Card variant="outlined" padding="md" style={styles.checkinPromptCard}>
+            <View style={styles.checkinPromptRow}>
+              <View
+                style={[
+                  styles.checkinIconCircle,
+                  { backgroundColor: `${theme.colors.primary}18` },
+                ]}
+              >
+                <Ionicons name="sunny-outline" size={22} color={theme.colors.primary} />
+              </View>
+              <View style={styles.checkinPromptText}>
+                <Text variant="subtitle" color="primary">
+                  Daily Check-in
+                </Text>
+                <Text variant="caption" color="secondary">
+                  Track mood, stress &amp; confidence for today
+                </Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={theme.colors.textSecondary} />
+            </View>
+          </Card>
+        </TouchableOpacity>
+      )}
+
       {/* Daily Motivation Quote */}
       {dailyQuote && (
         <Card variant="outlined" padding="md" style={styles.quoteCard}>
@@ -434,6 +477,25 @@ const styles = StyleSheet.create({
   progressMeta: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+  checkinPromptCard: {
+    marginBottom: 0,
+  },
+  checkinPromptRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  checkinIconCircle: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  checkinPromptText: {
+    flex: 1,
+    gap: 2,
   },
   quoteCard: {
     gap: 8,

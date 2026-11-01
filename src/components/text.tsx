@@ -16,6 +16,7 @@ export function Text({
   variant = 'body',
   color = 'primary',
   center = false,
+  maxFontSizeMultiplier = 2.0,
   style,
   children,
   ...rest
@@ -48,6 +49,7 @@ export function Text({
 
   return (
     <RNText
+      maxFontSizeMultiplier={maxFontSizeMultiplier}
       style={[
         theme.typography[variant],
         colorStyle,

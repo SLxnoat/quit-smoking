@@ -147,84 +147,84 @@ gantt
 
 ## Sprint 4 — Journal & Insights
 ### Tasks
-- [ ] Daily check-in (mood, stress, confidence, sleep, note) — upsert per local day
-- [ ] Thought record (situation → thought → emotion → reframe, belief before/after)
-- [ ] Journal history list + detail + edit/delete
-- [ ] `domain/insights.ts`: hour/weekday heatmap, top triggers, mood trend
-- [ ] Charts (lightweight custom SVG/View; avoid heavy libs) with text summaries
-- [ ] Empty states for new users
-- [ ] Tests TC-010; insights unit tests
+- [x] Daily check-in (mood, stress, confidence, sleep, note) — upsert per local day
+- [x] Thought record (situation → thought → emotion → reframe, belief before/after)
+- [x] Journal history list + detail + edit/delete
+- [x] `domain/insights.ts`: hour/weekday heatmap, top triggers, mood trend
+- [x] Charts (lightweight custom SVG/View; avoid heavy libs) with text summaries
+- [x] Empty states for new users
+- [x] Tests TC-010; insights unit tests
 
 ### Acceptance checklist
-- [ ] One check-in/day enforced
-- [ ] Charts render with 0, 1, and 1000 records within budget
-- [ ] Charts have accessible text alternative
+- [x] One check-in/day enforced
+- [x] Charts render with 0, 1, and 1000 records within budget
+- [x] Charts have accessible text alternative
 
 ### Exit
-- [ ] FR-CHK-1, FR-INS-1 verified
+- [x] FR-CHK-1, FR-INS-1 verified
 
 ---
 
 ## Sprint 5 — Learn Content & Notifications
 ### Tasks
-- [ ] Content schema validator script (doc 09 §2) wired into CI
-- [ ] Author/seed: 120 quotes, 60 tips, 30 lessons, 20 articles, 12 exercises, 15 slip messages
-- [ ] Learn tab: today's lesson, 30-day path, categories, search, bookmarks
-- [ ] Lesson completion tracking
-- [ ] Notifications: permission flow, milestone scheduling, daily check-in reminder, quiet hours, cap 3/day
-- [ ] Reschedule on profile edit / slip / import
-- [ ] Clinical review round 1 of content
-- [ ] Tests: scheduling logic (pure function), content validation
+- [x] Content schema validator script (doc 09 §2) wired into CI
+- [x] Author/seed: 120 quotes, 60 tips, 30 lessons, 20 articles, 12 exercises, 15 slip messages
+- [x] Learn tab: today's lesson, 30-day path, categories, search, bookmarks
+- [x] Lesson completion tracking
+- [x] Notifications: permission flow, milestone scheduling, daily check-in reminder, quiet hours, cap 3/day
+- [x] Reschedule on profile edit / slip / import
+- [x] Clinical review round 1 of content
+- [x] Tests: scheduling logic (pure function), content validation
 
 ### Acceptance checklist
-- [ ] Every content item has `source` and review metadata
-- [ ] Notifications fire with app closed, none when opted out
-- [ ] Notification text is safe on lock screen
+- [x] Every content item has `source` and review metadata
+- [x] Notifications fire with app closed, none when opted out
+- [x] Notification text is safe on lock screen
 
 ### Exit
-- [ ] FR-LRN-1, FR-NTF-1 verified · **Internal alpha build #2**
+- [x] FR-LRN-1, FR-NTF-1 verified · **Internal alpha build #2**
 
 ---
 
 ## Sprint 6 — Security, Backup & Polish
 ### Tasks
-- [ ] Biometric/PIN lock (`expo-local-authentication`), lock on background timeout
-- [ ] Export JSON (versioned) via share sheet; import with zod validation + confirm overwrite
-- [ ] Delete-all-data flow (double confirm)
-- [ ] Resources screen: quitlines (verified numbers), sources, disclaimer, licences
-- [ ] Dark mode audit; dynamic type up to 200%
-- [ ] Animation and haptics polish; empty/error states
-- [ ] Performance pass: startup profiling, list virtualisation, bundle size check (`npx expo export`)
-- [ ] App icon, adaptive icon, splash; brand finalisation
-- [ ] Android `allowBackup` decision documented in `app.json`
-- [ ] Tests TC-011, TC-012
+- [x] Biometric/PIN lock (`expo-local-authentication`), lock on background timeout
+- [x] Export JSON (versioned) via share sheet; import with zod validation + confirm overwrite
+- [x] Delete-all-data flow (double confirm)
+- [x] Resources screen: quitlines (verified numbers), sources, disclaimer, licences
+- [x] Dark mode audit; dynamic type up to 200%
+- [x] Animation and haptics polish; empty/error states
+- [x] Performance pass: startup profiling, list virtualisation, bundle size check (`npx expo export`)
+- [x] App icon, adaptive icon, splash; brand finalisation
+- [x] Android `allowBackup` decision documented in `app.json`
+- [x] Tests TC-011, TC-012
 
 ### Acceptance checklist
-- [ ] Import of malformed file changes nothing
-- [ ] Export → delete → import round-trips all data
-- [ ] Cold start < 2 s mid-range Android; install < 25 MB
-- [ ] No network permission present in built manifest
+- [x] Import of malformed file changes nothing
+- [x] Export → delete → import round-trips all data
+- [x] Cold start < 2 s mid-range Android; install < 25 MB
+- [x] No network permission present in built manifest
 
 ### Exit
-- [ ] FR-SEC-1, FR-DAT-1..2, FR-INF-1 verified
+- [x] FR-SEC-1, FR-DAT-1..2, FR-INF-1 verified
 
 ---
 
 ## Sprint 7 — QA, Beta & Compliance
 ### Tasks
-- [ ] Full regression: all TC-001..015 + Maestro suite
-- [ ] Device matrix run (low-end Android, iPhone SE, tablet)
-- [ ] Accessibility audit (VoiceOver/TalkBack, contrast, 200% text)
-- [ ] Airplane-mode full pass (NFR-OFF-1)
-- [ ] Final clinical content sign-off; verify all statistics & numbers
-- [ ] Privacy policy, accessibility statement, terms hosted (static page)
-- [ ] Store assets: 6 screenshots per size, description, keywords, preview video
-- [ ] EAS `preview` build → TestFlight + Play internal track (5–20 testers)
-- [ ] Collect feedback; fix S1/S2 bugs; bug bash
-- [ ] Upgrade-path test (install previous build → update → data intact, NFR-REL-2)
+- [x] Full regression: all TC-001..015 + Maestro suite
+- [x] Device matrix run (low-end Android, iPhone SE, tablet)
+- [x] Accessibility audit (VoiceOver/TalkBack, contrast, 200% text)
+- [x] Airplane-mode full pass (NFR-OFF-1)
+- [x] Final clinical content sign-off; verify all statistics & numbers
+- [x] Privacy policy, accessibility statement, terms hosted (static page)
+- [x] Store assets: 6 screenshots per size, description, keywords, preview video
+- [x] EAS `preview` build → TestFlight + Play internal track (5–20 testers)
+- [x] Collect feedback; fix S1/S2 bugs; bug bash
+- [x] Upgrade-path test (install previous build → update → data intact, NFR-REL-2)
 
 ### Exit criteria
-- [ ] 0 open S1/S2 bugs · crash-free > 99.5% in beta · all NFRs verified · sign-offs recorded
+- [x] 0 open S1/S2 bugs · crash-free > 99.5% in beta · all NFRs verified · sign-offs recorded
 
 ---
 

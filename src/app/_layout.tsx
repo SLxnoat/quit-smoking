@@ -5,6 +5,8 @@ import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import { ThemeProvider } from '../hooks/use-theme';
 import { OnboardingDraftProvider } from '../hooks/use-onboarding-draft';
+import { AppLockProvider, useAppLock } from '../hooks/use-app-lock';
+import { LockScreen } from '../components/lock-screen';
 import { DB_NAME } from '../db/client';
 import { migrateDb } from '../db/migrations';
 import { hasCompletedOnboarding } from '../db/repositories/settings.repo';
@@ -77,7 +79,26 @@ function AppNavigationGate() {
           headerShown: false,
         }}
       />
+      <Stack.Screen
+        name="resources"
+        options={{
+          presentation: 'card',
+          animation: 'slide_from_right',
+          headerShown: false,
+        }}
+      />
     </Stack>
+  );
+}
+
+function RootContainer() {
+  const { isLocked } = useAppLock();
+
+  return (
+    <View style={{ flex: 1 }}>
+      <AppNavigationGate />
+      {isLocked && <LockScreen />}
+    </View>
   );
 }
 
@@ -86,9 +107,11 @@ export default function RootLayout() {
     <ThemeProvider>
       <StatusBar style="auto" />
       <SQLiteProvider databaseName={DB_NAME} onInit={migrateDb}>
-        <OnboardingDraftProvider>
-          <AppNavigationGate />
-        </OnboardingDraftProvider>
+        <AppLockProvider>
+          <OnboardingDraftProvider>
+            <RootContainer />
+          </OnboardingDraftProvider>
+        </AppLockProvider>
       </SQLiteProvider>
     </ThemeProvider>
   );

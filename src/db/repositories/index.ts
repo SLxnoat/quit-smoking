@@ -8,3 +8,5 @@ export * from './goals.repo';
 export * from './craving.repo';
 export * from './slips.repo';
 export * from './support-contacts.repo';
+export * from './checkins.repo';
+export * from './thought-records.repo';

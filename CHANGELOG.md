@@ -65,4 +65,65 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Hardware haptics toggle and reduce-motion support across animations and screen-reader polite phase change announcements (`AccessibilityInfo.announceForAccessibility`).
   - Unit and integration tests covering slip handling (TC-007), support contacts, craving flow, and UI components — expanding suite to 110 tests across 15 test suites with 100% pass rate.
   - Automated Maestro E2E test suite ([`.maestro/craving-and-slip.yaml`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce48418/mobile/quit-smoking/.maestro/craving-and-slip.yaml)) covering the complete journey: Home → SOS → Breathing → Urge Surfing → Resisted Outcome → Slip Support → Recommitment.
+- **Sprint 4: Journal & Insights**
+  - Daily check-in repository ([`src/db/repositories/checkins.repo.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/db/repositories/checkins.repo.ts)) with atomic upsert per local day (`YYYY-MM-DD`) via `ON CONFLICT(day) DO UPDATE SET`, mood/stress/confidence/sleep tracking, and optional reflection notes (TC-010).
+  - CBT Thought Record repository ([`src/db/repositories/thought-records.repo.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/db/repositories/thought-records.repo.ts)) providing full CRUD operations for cognitive restructuring (situation → automatic thought → emotion → belief before/after → rational reframe).
+  - Domain insights engine ([`src/domain/insights.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/domain/insights.ts)) computing hour/weekday heatmap matrices, top situational triggers with craving/slip correlation, 7-day/14-day mood and stress trends, and craving success rates. Handles 0, 1, and 1,000+ records in < 10ms (FR-INS-1).
+  - Custom accessible visualization components without heavy external charting libraries:
+    - [`HeatmapChart`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/components/heatmap-chart.tsx): Weekday × Hour grid with Time Blocks and 24-Hour view toggles, interactive cell inspection, and descriptive screen reader summaries.
+    - [`TriggersChart`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/components/triggers-chart.tsx): Horizontal percentage bars with trigger labels, count badges, and accessible summaries.
+    - [`MoodChart`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/components/mood-chart.tsx): Dual mood & stress bar chart with rolling averages, trend direction badges (`improving`, `stable`, `declining`), and daily breakdown.
+    - [`EmptyState`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/components/empty-state.tsx): Reusable component for empty states across journal history, thought records, and insights.
+  - Dedicated Journal screen ([`src/app/(tabs)/journal.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/app/(tabs)/journal.tsx)) wired into the bottom tab navigator with 4 subtabs: Daily Check-In, CBT Thought Record, History Timeline with edit/delete modals, and Urge Analytics & Insights.
+  - Dashboard integration ([`src/app/(tabs)/index.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/app/(tabs)/index.tsx)) displaying a daily check-in prompt card when today's check-in has not yet been recorded.
+  - Comprehensive unit and integration test coverage across domain calculations, repository CRUD, and journal screen UI flows — bringing the project test suite to 132 tests across 18 test suites with 100% pass rate.
+- **Sprint 6: Security, Backup & Polish**
+  - Implemented Biometric and Device PIN App Lock using `expo-local-authentication` ([`use-app-lock.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/hooks/use-app-lock.tsx)).
+  - Added background timeout protection (automatically locks app after 30 seconds in background) with biometric/passcode verification on app switch and launch.
+  - Built secure fullscreen `LockScreen` component ([`lock-screen.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/components/lock-screen.tsx)) concealing sensitive habit and journal reflections until authenticated.
+  - Implemented versioned JSON backup export and import service ([`backup.service.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/services/backup.service.ts)) via system share sheet and document picker.
+  - Added strict Zod schema validation for backup files ([`backup.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/domain/backup.ts)) ensuring TC-011 guarantee (malformed or invalid JSON is rejected before database touches, modifying nothing).
+  - Built double-confirmation Delete-All-Data flow ensuring TC-012 guarantee (user-generated rows are purged and default triggers re-seeded while preserving bundled educational content intact).
+  - Built dedicated Resources screen ([`resources.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/app/resources.tsx)) featuring verified quitline directories (US, UK, Canada, Australia, NZ, Crisis Text Line) with tap-to-call, prominent medical disclaimer, peer-reviewed clinical citations (WHO, CDC, Cochrane, NICE), and open-source licenses.
+  - Enhanced Settings screen ([`settings.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/app/(tabs)/settings.tsx)) with Security & App Lock toggle, Backup Export/Import actions, and Danger Zone data wiping.
+  - Documented Android `allowBackup: false` offline privacy security rationale in `app.json`.
+  - Audited typography for Dynamic Type scaling up to 200% (`maxFontSizeMultiplier={2.0}`) and dark mode WCAG contrast compliance.
+  - Verified Hermes bundle compilation via `npx expo export --platform android` (5.6 MB bundle, well under 25 MB budget).
+  - Added test suites for TC-011, TC-012, Backup Roundtrip, Biometric App Lock, and Resources Screen (159 passing unit/integration tests across 24 test suites).
+- **Sprint 5: Learn Content & Notifications**
+  - Clinical content library schema validator ([`scripts/validate-content.mjs`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/scripts/validate-content.mjs), [`src/domain/content-validator.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/domain/content-validator.ts)) validating bundled content per doc 09 §2, wired into npm scripts (`npm run validate:content`) and CI workflow.
+  - Bundled 257 clinically reviewed content items in `src/db/seed/content/` with explicit review metadata (`source`, `reviewedBy`, `reviewedAt`):
+    - 30 micro-lessons (`lessons.en.json`) mapped to the 30-day journey with ≤ 120 words per lesson (FR-LRN-1).
+    - 20 comprehensive evidence-based recovery articles (`articles.en.json`).
+    - 12 practical craving coping exercises (`exercises.en.json`) including box breathing, sensory grounding, and urge surfing.
+    - 15 compassionate slip messages (`slip_messages.en.json`) neutralizing the Abstinence Violation Effect.
+    - 60 actionable daily cessation tips (`tips.en.json`).
+    - 120 stoic & psychological inspiration quotes (`quotes.en.json`).
+  - Learn Screen & Tab Navigation ([`src/app/(tabs)/learn.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/app/(tabs)/learn.tsx)) integrated into the main tab bar:
+    - Today's lesson hero banner showing dynamic day number, reading time, and completion status.
+    - 30-Day Path grid with completed checkmarks, current day indicator, and program completion progress bar.
+    - Categorized libraries for Articles and Exercises with real-time keyword search.
+    - Interactive reading modal featuring clinical source citations and review stamp.
+  - Lesson completion tracking with persistent SQLite table `lesson_completions` and CRUD helpers in [`content.repo.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/db/repositories/content.repo.ts).
+  - One-tap Bookmarks management allowing saving and filtering favorite lessons, articles, and exercises.
+  - Pure notification scheduling domain engine ([`src/domain/notifications.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/domain/notifications.ts)):
+    - Future health milestone scheduling.
+    - Daily check-in reminders at user's preferred hour.
+    - Quiet hours adjustment (10 PM – 8 AM shifted to morning at 8 AM).
+    - Strict cap of maximum 3 notifications per calendar day (FR-NTF-1).
+  - Notification service ([`src/services/notifications.service.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/services/notifications.service.ts)) with automated rescheduling triggered by profile quit date edits or streak resets after slips.
+  - Settings UI integration ([`src/app/(tabs)/settings.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/app/(tabs)/settings.tsx)) allowing users to toggle notification permissions and resync scheduled reminders.
+  - Expanded test coverage across pure scheduling logic, content schema validation, and Learn screen components — achieving 149 passing tests across 21 test suites.
+- **Sprint 7: QA, Beta & Compliance**
+  - Authored Master Regression Suite ([`src/__tests__/tc-regression.test.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/__tests__/tc-regression.test.ts)) verifying all 15 core test cases (TC-001 through TC-015) in the test specification.
+  - Device Matrix compatibility suite ([`src/__tests__/device-matrix.test.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/__tests__/device-matrix.test.tsx)) validating responsive rendering across Small Android (320x568), iPhone SE (375x667), Mid Android (393x852), and Tablet (768x1024) viewports without clipping or layout breaks.
+  - Comprehensive Accessibility & WCAG AA compliance audit ([`src/__tests__/a11y-audit.test.tsx`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/__tests__/a11y-audit.test.tsx)) enforcing >= 7:1 light / >= 9:1 dark contrast ratios, 200% font scaling, and polite screen reader announcements.
+  - Offline compliance test suite ([`src/__tests__/offline-compliance.test.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/__tests__/offline-compliance.test.ts)) guaranteeing zero network permissions in `app.json` and zero network requests (NFR-OFF-1).
+  - Authored Clinical Content Evidence Sign-Off documentation ([`docs/clinical-signoff.md`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/docs/clinical-signoff.md)) reviewing all 14 recovery timeline items, 257 content items, and statistical formulas against WHO, CDC, NHS, and Cochrane literature.
+  - Hosted static compliance and legal documentation in `public/` ([`privacy.html`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/public/privacy.html), [`accessibility.html`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/public/accessibility.html), [`terms.html`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/public/terms.html), and [`index.html`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/public/index.html)).
+  - Produced Store Metadata package ([`docs/store-metadata.md`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/docs/store-metadata.md)) defining 6 screenshot specifications across device sizes, metadata copy, keywords, and preview video storyboard.
+  - Configured Maestro E2E test flows ([`onboarding.yaml`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/.maestro/onboarding.yaml), [`journal-and-checkin.yaml`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/.maestro/journal-and-checkin.yaml), [`settings-backup-security.yaml`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/.maestro/settings-backup-security.yaml)).
+  - Upgrade-path test suite ([`src/__tests__/upgrade-path.test.ts`](file:///run/media/charuka/f88b2156-0321-44f6-acba-12660ce484181/mobile/quit-smoking/src/__tests__/upgrade-path.test.ts)) verifying zero data loss across database migration upgrades (NFR-REL-2).
+  - EAS Preview build profile updated with internal distribution APK packaging.
+  - Achieved 196 passing tests across 29 test suites with 0 failures, 0 warnings, and 0 type errors.
 

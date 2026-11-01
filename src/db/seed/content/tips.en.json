@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "items": [
+    {
+      "id": "tip_01",
+      "type": "tip",
+      "category": "craving",
+      "title": "Cold Water Sip #1",
+      "body": "Sip a glass of ice-cold water through a straw when an urge hits. The coolness stimulates the vagus nerve and mimics the oral fixation safely. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_02",
+      "type": "tip",
+      "category": "habits",
+      "title": "Coffee Location Shift #2",
+      "body": "Drink your morning coffee in a different room or from a new mug to disrupt the automatic neurological pairing with cigarettes. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_03",
+      "type": "tip",
+      "category": "coping",
+      "title": "The Cinnamon Stick Trick #3",
+      "body": "Hold a natural cinnamon stick between your fingers and draw air through it. It gives a gentle spicy tingle on the lips without smoke. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_04",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Watch the Clock for 3 Minutes #4",
+      "body": "When an intense urge arises, look at your watch and wait exactly 180 seconds. In almost all cases, the peak will subside before time is up. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_05",
+      "type": "tip",
+      "category": "environment",
+      "title": "Car Deep Clean #5",
+      "body": "Thoroughly vacuum your car, wash the interior windows, and place a pleasant natural lavender or citrus scent inside. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_06",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Tart Fruit Snacks #6",
+      "body": "Snack on tart green apple slices or frozen blueberries. Sharp sour flavors disrupt the dull oral cravings associated with nicotine. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_07",
+      "type": "tip",
+      "category": "craving",
+      "title": "Practice Your Script #7",
+      "body": "Rehearse saying with a smile: \"No thanks, I’m smoke-free!\" Saying it aloud cements your identity before social situations arise. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_08",
+      "type": "tip",
+      "category": "habits",
+      "title": "Mint Toothpaste Brush #8",
+      "body": "Brush your teeth with strong mint toothpaste immediately after meals. The clean fresh feeling significantly dampens the post-meal smoke urge. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_09",
+      "type": "tip",
+      "category": "coping",
+      "title": "Post-Meal Walk #9",
+      "body": "Stand up immediately after eating and take a brisk 5-minute walk around the block instead of lingering at the table. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_10",
+      "type": "tip",
+      "category": "mindset",
+      "title": "The Cost Reminder #10",
+      "body": "Calculate what you spent on tobacco each month. Picture that money compounding in an index fund or savings account for a dream vacation. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_11",
+      "type": "tip",
+      "category": "environment",
+      "title": "Cold Water Sip #11",
+      "body": "Sip a glass of ice-cold water through a straw when an urge hits. The coolness stimulates the vagus nerve and mimics the oral fixation safely. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_12",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Coffee Location Shift #12",
+      "body": "Drink your morning coffee in a different room or from a new mug to disrupt the automatic neurological pairing with cigarettes. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_13",
+      "type": "tip",
+      "category": "craving",
+      "title": "The Cinnamon Stick Trick #13",
+      "body": "Hold a natural cinnamon stick between your fingers and draw air through it. It gives a gentle spicy tingle on the lips without smoke. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_14",
+      "type": "tip",
+      "category": "habits",
+      "title": "Watch the Clock for 3 Minutes #14",
+      "body": "When an intense urge arises, look at your watch and wait exactly 180 seconds. In almost all cases, the peak will subside before time is up. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_15",
+      "type": "tip",
+      "category": "coping",
+      "title": "Car Deep Clean #15",
+      "body": "Thoroughly vacuum your car, wash the interior windows, and place a pleasant natural lavender or citrus scent inside. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_16",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Tart Fruit Snacks #16",
+      "body": "Snack on tart green apple slices or frozen blueberries. Sharp sour flavors disrupt the dull oral cravings associated with nicotine. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_17",
+      "type": "tip",
+      "category": "environment",
+      "title": "Practice Your Script #17",
+      "body": "Rehearse saying with a smile: \"No thanks, I’m smoke-free!\" Saying it aloud cements your identity before social situations arise. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_18",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Mint Toothpaste Brush #18",
+      "body": "Brush your teeth with strong mint toothpaste immediately after meals. The clean fresh feeling significantly dampens the post-meal smoke urge. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_19",
+      "type": "tip",
+      "category": "craving",
+      "title": "Post-Meal Walk #19",
+      "body": "Stand up immediately after eating and take a brisk 5-minute walk around the block instead of lingering at the table. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_20",
+      "type": "tip",
+      "category": "habits",
+      "title": "The Cost Reminder #20",
+      "body": "Calculate what you spent on tobacco each month. Picture that money compounding in an index fund or savings account for a dream vacation. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_21",
+      "type": "tip",
+      "category": "coping",
+      "title": "Cold Water Sip #21",
+      "body": "Sip a glass of ice-cold water through a straw when an urge hits. The coolness stimulates the vagus nerve and mimics the oral fixation safely. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_22",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Coffee Location Shift #22",
+      "body": "Drink your morning coffee in a different room or from a new mug to disrupt the automatic neurological pairing with cigarettes. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_23",
+      "type": "tip",
+      "category": "environment",
+      "title": "The Cinnamon Stick Trick #23",
+      "body": "Hold a natural cinnamon stick between your fingers and draw air through it. It gives a gentle spicy tingle on the lips without smoke. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_24",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Watch the Clock for 3 Minutes #24",
+      "body": "When an intense urge arises, look at your watch and wait exactly 180 seconds. In almost all cases, the peak will subside before time is up. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_25",
+      "type": "tip",
+      "category": "craving",
+      "title": "Car Deep Clean #25",
+      "body": "Thoroughly vacuum your car, wash the interior windows, and place a pleasant natural lavender or citrus scent inside. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_26",
+      "type": "tip",
+      "category": "habits",
+      "title": "Tart Fruit Snacks #26",
+      "body": "Snack on tart green apple slices or frozen blueberries. Sharp sour flavors disrupt the dull oral cravings associated with nicotine. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_27",
+      "type": "tip",
+      "category": "coping",
+      "title": "Practice Your Script #27",
+      "body": "Rehearse saying with a smile: \"No thanks, I’m smoke-free!\" Saying it aloud cements your identity before social situations arise. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_28",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Mint Toothpaste Brush #28",
+      "body": "Brush your teeth with strong mint toothpaste immediately after meals. The clean fresh feeling significantly dampens the post-meal smoke urge. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_29",
+      "type": "tip",
+      "category": "environment",
+      "title": "Post-Meal Walk #29",
+      "body": "Stand up immediately after eating and take a brisk 5-minute walk around the block instead of lingering at the table. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_30",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "The Cost Reminder #30",
+      "body": "Calculate what you spent on tobacco each month. Picture that money compounding in an index fund or savings account for a dream vacation. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_31",
+      "type": "tip",
+      "category": "craving",
+      "title": "Cold Water Sip #31",
+      "body": "Sip a glass of ice-cold water through a straw when an urge hits. The coolness stimulates the vagus nerve and mimics the oral fixation safely. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_32",
+      "type": "tip",
+      "category": "habits",
+      "title": "Coffee Location Shift #32",
+      "body": "Drink your morning coffee in a different room or from a new mug to disrupt the automatic neurological pairing with cigarettes. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_33",
+      "type": "tip",
+      "category": "coping",
+      "title": "The Cinnamon Stick Trick #33",
+      "body": "Hold a natural cinnamon stick between your fingers and draw air through it. It gives a gentle spicy tingle on the lips without smoke. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_34",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Watch the Clock for 3 Minutes #34",
+      "body": "When an intense urge arises, look at your watch and wait exactly 180 seconds. In almost all cases, the peak will subside before time is up. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_35",
+      "type": "tip",
+      "category": "environment",
+      "title": "Car Deep Clean #35",
+      "body": "Thoroughly vacuum your car, wash the interior windows, and place a pleasant natural lavender or citrus scent inside. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_36",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Tart Fruit Snacks #36",
+      "body": "Snack on tart green apple slices or frozen blueberries. Sharp sour flavors disrupt the dull oral cravings associated with nicotine. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_37",
+      "type": "tip",
+      "category": "craving",
+      "title": "Practice Your Script #37",
+      "body": "Rehearse saying with a smile: \"No thanks, I’m smoke-free!\" Saying it aloud cements your identity before social situations arise. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_38",
+      "type": "tip",
+      "category": "habits",
+      "title": "Mint Toothpaste Brush #38",
+      "body": "Brush your teeth with strong mint toothpaste immediately after meals. The clean fresh feeling significantly dampens the post-meal smoke urge. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_39",
+      "type": "tip",
+      "category": "coping",
+      "title": "Post-Meal Walk #39",
+      "body": "Stand up immediately after eating and take a brisk 5-minute walk around the block instead of lingering at the table. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_40",
+      "type": "tip",
+      "category": "mindset",
+      "title": "The Cost Reminder #40",
+      "body": "Calculate what you spent on tobacco each month. Picture that money compounding in an index fund or savings account for a dream vacation. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_41",
+      "type": "tip",
+      "category": "environment",
+      "title": "Cold Water Sip #41",
+      "body": "Sip a glass of ice-cold water through a straw when an urge hits. The coolness stimulates the vagus nerve and mimics the oral fixation safely. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_42",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Coffee Location Shift #42",
+      "body": "Drink your morning coffee in a different room or from a new mug to disrupt the automatic neurological pairing with cigarettes. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_43",
+      "type": "tip",
+      "category": "craving",
+      "title": "The Cinnamon Stick Trick #43",
+      "body": "Hold a natural cinnamon stick between your fingers and draw air through it. It gives a gentle spicy tingle on the lips without smoke. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_44",
+      "type": "tip",
+      "category": "habits",
+      "title": "Watch the Clock for 3 Minutes #44",
+      "body": "When an intense urge arises, look at your watch and wait exactly 180 seconds. In almost all cases, the peak will subside before time is up. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_45",
+      "type": "tip",
+      "category": "coping",
+      "title": "Car Deep Clean #45",
+      "body": "Thoroughly vacuum your car, wash the interior windows, and place a pleasant natural lavender or citrus scent inside. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_46",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Tart Fruit Snacks #46",
+      "body": "Snack on tart green apple slices or frozen blueberries. Sharp sour flavors disrupt the dull oral cravings associated with nicotine. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_47",
+      "type": "tip",
+      "category": "environment",
+      "title": "Practice Your Script #47",
+      "body": "Rehearse saying with a smile: \"No thanks, I’m smoke-free!\" Saying it aloud cements your identity before social situations arise. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_48",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Mint Toothpaste Brush #48",
+      "body": "Brush your teeth with strong mint toothpaste immediately after meals. The clean fresh feeling significantly dampens the post-meal smoke urge. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_49",
+      "type": "tip",
+      "category": "craving",
+      "title": "Post-Meal Walk #49",
+      "body": "Stand up immediately after eating and take a brisk 5-minute walk around the block instead of lingering at the table. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_50",
+      "type": "tip",
+      "category": "habits",
+      "title": "The Cost Reminder #50",
+      "body": "Calculate what you spent on tobacco each month. Picture that money compounding in an index fund or savings account for a dream vacation. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_51",
+      "type": "tip",
+      "category": "coping",
+      "title": "Cold Water Sip #51",
+      "body": "Sip a glass of ice-cold water through a straw when an urge hits. The coolness stimulates the vagus nerve and mimics the oral fixation safely. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_52",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Coffee Location Shift #52",
+      "body": "Drink your morning coffee in a different room or from a new mug to disrupt the automatic neurological pairing with cigarettes. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_53",
+      "type": "tip",
+      "category": "environment",
+      "title": "The Cinnamon Stick Trick #53",
+      "body": "Hold a natural cinnamon stick between your fingers and draw air through it. It gives a gentle spicy tingle on the lips without smoke. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_54",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "Watch the Clock for 3 Minutes #54",
+      "body": "When an intense urge arises, look at your watch and wait exactly 180 seconds. In almost all cases, the peak will subside before time is up. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_55",
+      "type": "tip",
+      "category": "craving",
+      "title": "Car Deep Clean #55",
+      "body": "Thoroughly vacuum your car, wash the interior windows, and place a pleasant natural lavender or citrus scent inside. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_56",
+      "type": "tip",
+      "category": "habits",
+      "title": "Tart Fruit Snacks #56",
+      "body": "Snack on tart green apple slices or frozen blueberries. Sharp sour flavors disrupt the dull oral cravings associated with nicotine. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_57",
+      "type": "tip",
+      "category": "coping",
+      "title": "Practice Your Script #57",
+      "body": "Rehearse saying with a smile: \"No thanks, I’m smoke-free!\" Saying it aloud cements your identity before social situations arise. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_58",
+      "type": "tip",
+      "category": "mindset",
+      "title": "Mint Toothpaste Brush #58",
+      "body": "Brush your teeth with strong mint toothpaste immediately after meals. The clean fresh feeling significantly dampens the post-meal smoke urge. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_59",
+      "type": "tip",
+      "category": "environment",
+      "title": "Post-Meal Walk #59",
+      "body": "Stand up immediately after eating and take a brisk 5-minute walk around the block instead of lingering at the table. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "tip_60",
+      "type": "tip",
+      "category": "nutrition",
+      "title": "The Cost Reminder #60",
+      "body": "Calculate what you spent on tobacco each month. Picture that money compounding in an index fund or savings account for a dream vacation. Remember: you are strengthening your smoke-free neural circuits with every mindful choice you make today.",
+      "source": "NHS Smokefree Clinical Coping Library",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    }
+  ]
+}

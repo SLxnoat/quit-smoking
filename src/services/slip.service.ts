@@ -6,6 +6,7 @@ import {
   type LifetimeStats,
   type Slip,
 } from '../db/repositories/slips.repo';
+import { rescheduleNotifications } from './notifications.service';
 
 export interface RecordSlipInput {
   occurredAt?: number;
@@ -22,14 +23,13 @@ export interface RecordSlipResult {
 }
 
 /**
- * Reschedule milestone notifications hook (stub for Sprint 5 notification engine).
- * When active, cancels existing notifications and schedules fresh reminders based on the new quit date.
+ * Reschedules milestone and check-in notifications based on the new quit date.
  */
 export async function rescheduleMilestoneNotifications(
-  _db: SQLiteDatabase,
+  db: SQLiteDatabase,
   _newQuitAt: number
 ): Promise<void> {
-  // Stub for Sprint 5 notification background worker
+  await rescheduleNotifications(db);
 }
 
 /**

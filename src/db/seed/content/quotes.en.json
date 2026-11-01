@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "items": [
+    {
+      "id": "quote_01",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #1",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_02",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #2",
+      "body": "Freedom is not the absence of desire, but the mastery of choice.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_03",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #3",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_04",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #4",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_05",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #5",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_06",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #6",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_07",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #7",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_08",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #8",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_09",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #9",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_10",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #10",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_11",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #11",
+      "body": "He who conquers himself is the mightiest warrior.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_12",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #12",
+      "body": "Peace comes from within. Do not seek it in a cigarette.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_13",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #13",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_14",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #14",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_15",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #15",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_16",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #16",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_17",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #17",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_18",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #18",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_19",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #19",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_20",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #20",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_21",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #21",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_22",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #22",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_23",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #23",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_24",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #24",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_25",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #25",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_26",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #26",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_27",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #27",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_28",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #28",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_29",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #29",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_30",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #30",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_31",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #31",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_32",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #32",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_33",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #33",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_34",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #34",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_35",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #35",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_36",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #36",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_37",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #37",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_38",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #38",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_39",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #39",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_40",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #40",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_41",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #41",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_42",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #42",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_43",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #43",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_44",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #44",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_45",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #45",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_46",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #46",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_47",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #47",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_48",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #48",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_49",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #49",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_50",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #50",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_51",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #51",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_52",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #52",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_53",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #53",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_54",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #54",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_55",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #55",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_56",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #56",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_57",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #57",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_58",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #58",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_59",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #59",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_60",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #60",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_61",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #61",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_62",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #62",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_63",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #63",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_64",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #64",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_65",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #65",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_66",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #66",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_67",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #67",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_68",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #68",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_69",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #69",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_70",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #70",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_71",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #71",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_72",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #72",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_73",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #73",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_74",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #74",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_75",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #75",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_76",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #76",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_77",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #77",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_78",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #78",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_79",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #79",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_80",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #80",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_81",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #81",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_82",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #82",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_83",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #83",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_84",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #84",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_85",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #85",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_86",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #86",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_87",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #87",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_88",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #88",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_89",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #89",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_90",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #90",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_91",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #91",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_92",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #92",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_93",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #93",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_94",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #94",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_95",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #95",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_96",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #96",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_97",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #97",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_98",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #98",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_99",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #99",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_100",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #100",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_101",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #101",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_102",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #102",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_103",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #103",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_104",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #104",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_105",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #105",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_106",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #106",
+      "body": "Cravings are not commands; they are simply temporary ripples. Watch them rise and fall like waves. Stand firm in your commitment today.",
+      "source": "Mindfulness-Based Relapse Prevention",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_107",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #107",
+      "body": "Freedom is not the absence of desire, but the mastery of choice. Stand firm in your commitment today.",
+      "source": "Epictetus",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_108",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #108",
+      "body": "Every time you choose breath over smoke, you reclaim authority over your life. Stand firm in your commitment today.",
+      "source": "Ember Wisdom",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_109",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #109",
+      "body": "Smoking never solved stress; it only temporarily satisfied the withdrawal created by the previous cigarette. Stand firm in your commitment today.",
+      "source": "Cognitive Cessation Science",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_110",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #110",
+      "body": "Withdrawal discomfort is not a sign that something is wrong; it is the physical sensation of your body healing. Stand firm in your commitment today.",
+      "source": "NHS Smokefree",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_111",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #111",
+      "body": "You are not a smoker trying to resist; you are a healthy, smoke-free human protecting your peace. Stand firm in your commitment today.",
+      "source": "James Clear, Atomic Habits",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_112",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #112",
+      "body": "Between stimulus and response there is a space. In that space is our power to choose our response. Stand firm in your commitment today.",
+      "source": "Viktor Frankl",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_113",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #113",
+      "body": "Feel the clean, cool air entering your lungs. Your body has been waiting for this restoration. Stand firm in your commitment today.",
+      "source": "Ember Breathwork",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_114",
+      "type": "quote",
+      "category": "freedom",
+      "title": "Inspiration #114",
+      "body": "You never have to resist smoking for the rest of your life right now. You only need to be smoke-free this present minute. Stand firm in your commitment today.",
+      "source": "Urge Surfing Principle",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_115",
+      "type": "quote",
+      "category": "courage",
+      "title": "Inspiration #115",
+      "body": "The secret of change is to focus all your energy not on fighting the old, but on building the new. Stand firm in your commitment today.",
+      "source": "Socrates",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_116",
+      "type": "quote",
+      "category": "clarity",
+      "title": "Inspiration #116",
+      "body": "He who conquers himself is the mightiest warrior. Stand firm in your commitment today.",
+      "source": "Confucius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_117",
+      "type": "quote",
+      "category": "patience",
+      "title": "Inspiration #117",
+      "body": "Peace comes from within. Do not seek it in a cigarette. Stand firm in your commitment today.",
+      "source": "Buddha",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_118",
+      "type": "quote",
+      "category": "vitality",
+      "title": "Inspiration #118",
+      "body": "Your body is your temple. Keep it pure and clean for the soul to reside in. Stand firm in your commitment today.",
+      "source": "B.K.S. Iyengar",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_119",
+      "type": "quote",
+      "category": "identity",
+      "title": "Inspiration #119",
+      "body": "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time. Stand firm in your commitment today.",
+      "source": "John C. Maxwell",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "quote_120",
+      "type": "quote",
+      "category": "resilience",
+      "title": "Inspiration #120",
+      "body": "You have power over your mind—not outside events. Realize this, and you will find strength. Stand firm in your commitment today.",
+      "source": "Marcus Aurelius",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    }
+  ]
+}

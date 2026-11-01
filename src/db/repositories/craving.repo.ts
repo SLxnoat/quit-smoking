@@ -57,6 +57,8 @@ export async function createCravingLog(
   };
 }
 
+export const logCraving = createCravingLog;
+
 export async function getCravingLogs(
   db: SQLiteDatabase
 ): Promise<CravingLog[]> {

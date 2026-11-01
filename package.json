@@ -56,11 +56,12 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint",
+    "lint": "EXPO_NO_TELEMETRY=1 expo lint",
     "test": "jest",
     "typecheck": "tsc --noEmit",
+    "validate:content": "node scripts/validate-content.mjs",
     "format": "prettier --write .",
-    "lint:fix": "expo lint --fix"
+    "lint:fix": "EXPO_NO_TELEMETRY=1 expo lint --fix"
   },
   "private": true
 }

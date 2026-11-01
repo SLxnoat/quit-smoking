@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Statement — Ember Smoke-Free Companion</title>
+  <style>
+    :root {
+      --bg: #0E1A1D;
+      --card-bg: #16262B;
+      --text: #E8F1EF;
+      --text-muted: #8CA59F;
+      --primary: #0F9D8A;
+      --border: #22383E;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 36px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+    h1 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 28px;
+      color: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 16px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(15, 157, 138, 0.2);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">WCAG 2.1 LEVEL AA CONFORMANCE</span>
+    <h1>Accessibility Statement</h1>
+    <p><strong>Published:</strong> November 2, 2026 &middot; <strong>Compliance Standard:</strong> WCAG 2.1 AA</p>
+
+    <h2>1. Our Commitment</h2>
+    <p>Ember is committed to ensuring digital accessibility for people of all abilities. We strive to continually improve the user experience for everyone and apply relevant accessibility standards across iOS and Android.</p>
+
+    <h2>2. Accessibility Features Built into Ember</h2>
+    <ul>
+      <li><strong>VoiceOver & TalkBack Support:</strong> All interactive buttons, inputs, sliders, and progress rings have semantic <code>accessibilityRole</code> and descriptive <code>accessibilityLabel</code> properties.</li>
+      <li><strong>Dynamic Type & Large Text:</strong> Ember fully supports operating system font scaling up to <strong>200%</strong> (<code>maxFontSizeMultiplier={2.0}</code>) without text overlapping, truncation, or broken layout.</li>
+      <li><strong>WCAG AA Color Contrast:</strong> Backgrounds, elevated cards, and typography maintain contrast ratios exceeding 7:1 for normal text and 4.5:1 for graphical interface elements in both Light and Dark themes.</li>
+      <li><strong>Touch Target Sizing:</strong> All touchable targets meet or exceed minimum dimensions of 44 &times; 44 points on iOS and 48 &times; 48 dp on Android.</li>
+      <li><strong>Multi-Sensory Feedback:</strong> Important interactions (such as completing breathing sessions or achieving milestones) provide synchronized haptic feedback and visual cues.</li>
+      <li><strong>Reduced Motion Support:</strong> Animations respect system accessibility preferences for reduced motion.</li>
+    </ul>
+
+    <h2>3. Feedback & Contact</h2>
+    <p>We welcome your feedback on the accessibility of Ember. If you encounter accessibility barriers, please let us know: <a href="mailto:accessibility@ember.internal">accessibility@ember.internal</a>.</p>
+
+    <footer>
+      &copy; 2026 Ember Smoking Cessation. All rights reserved. &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a>
+    </footer>
+  </div>
+</body>
+</html>

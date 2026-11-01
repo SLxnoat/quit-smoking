@@ -112,6 +112,11 @@ CREATE TABLE IF NOT EXISTS bookmarks (
   created_at INTEGER NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS lesson_completions (
+  lesson_id TEXT PRIMARY KEY,
+  completed_at INTEGER NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS settings (
   key TEXT PRIMARY KEY,
   value TEXT NOT NULL
@@ -198,6 +203,12 @@ export async function migrateDb(db: SQLiteDatabase): Promise<void> {
     } catch {
       // Column already exists
     }
+    await db.execAsync(`
+      CREATE TABLE IF NOT EXISTS lesson_completions (
+        lesson_id TEXT PRIMARY KEY,
+        completed_at INTEGER NOT NULL
+      );
+    `);
     await seedContent(db);
   }
 }

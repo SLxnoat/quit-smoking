@@ -33,6 +33,10 @@ export interface StatTileProps {
    * Optional test identifier.
    */
   testID?: string;
+  /**
+   * Optional custom accessibility label override.
+   */
+  accessibilityLabel?: string;
 }
 
 export function StatTile({
@@ -43,6 +47,7 @@ export function StatTile({
   accentColor,
   style,
   testID,
+  accessibilityLabel,
 }: StatTileProps) {
   const { theme } = useTheme();
 
@@ -54,7 +59,7 @@ export function StatTile({
       style={[styles.card, { borderColor: accentColor ? `${accentColor}44` : theme.colors.cardBorder }, style]}
       accessible
       accessibilityRole="text"
-      accessibilityLabel={`${label}: ${value}${subtext ? `, ${subtext}` : ''}`}
+      accessibilityLabel={accessibilityLabel ?? `${label}: ${value}${subtext ? `, ${subtext}` : ''}`}
     >
       <View style={styles.header}>
         {icon && typeof icon === 'string' ? (

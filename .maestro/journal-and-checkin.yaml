@@ -1,0 +1,47 @@
+appId: com.ember.quitsmoking
+---
+# ==============================================================================
+# Sprint 7 Maestro E2E Flow: Daily Check-in & CBT Thought Record
+# ==============================================================================
+
+- launchApp:
+    clearState: false
+
+# 1. Navigate to Journal Tab
+- tapOn: "Journal"
+- assertVisible: "Daily Check-in"
+
+# 2. Complete Check-in (Mood, Stress, Confidence, Sleep)
+- tapOn: "Mood"
+- tapOn: "8"
+- tapOn: "Stress"
+- tapOn: "3"
+- tapOn: "Confidence"
+- tapOn: "9"
+- tapOn: "Sleep"
+- tapOn: "7"
+- tapOn: "Add personal reflection note"
+- inputText: "Strong day, focused on breathing when cravings struck."
+- hideKeyboard
+- tapOn: "Save Today's Check-in"
+- assertVisible: "Saved"
+
+# 3. Switch to Thought Records Tab
+- tapOn: "Thoughts"
+- tapOn: "+ New Thought Record"
+- assertVisible: "CBT Thought Record"
+
+# 4. Fill Thought Record (Situation -> Thought -> Emotion -> Reframe)
+- tapOn: "What was happening?"
+- inputText: "Finished a stressful meeting"
+- tapOn: "Automatic thought"
+- inputText: "I need a smoke to handle this"
+- tapOn: "Emotion felt"
+- inputText: "Anxious & overwhelmed"
+- tapOn: "Balanced reframe"
+- inputText: "Smoking only relieves nicotine withdrawal, not work stress."
+- hideKeyboard
+- tapOn: "Save Thought Record"
+
+# 5. Verify Record in History List
+- assertVisible: "Finished a stressful meeting"

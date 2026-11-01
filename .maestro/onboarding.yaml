@@ -1,0 +1,51 @@
+appId: com.ember.quitsmoking
+---
+# ==============================================================================
+# Sprint 7 Maestro E2E Flow: Complete Onboarding & Disclaimer
+# ==============================================================================
+
+- launchApp:
+    clearState: true
+
+# 1. Welcome Screen
+- assertVisible: "Ember"
+- assertVisible: "Begin Your Smoke-Free Life"
+- tapOn: "Get Started"
+
+# 2. Quit Date Screen
+- assertVisible: "When did you quit?"
+- tapOn: "I Quit Right Now"
+- tapOn: "Continue"
+
+# 3. Habits and Costs
+- assertVisible: "Your Habits & Cost"
+- tapOn: "Cigarettes Per Day"
+- inputText: "20"
+- tapOn: "Price Per Pack"
+- inputText: "12.00"
+- hideKeyboard
+- tapOn: "Cold Turkey"
+- tapOn: "Continue"
+
+# 4. Core Reasons for Quitting
+- assertVisible: "Why are you quitting?"
+- tapOn: "Better long-term health & longevity"
+- tapOn: "Saving money for what matters"
+- tapOn: "Continue"
+
+# 5. Triggers & Coping Plans
+- assertVisible: "Identify your triggers"
+- tapOn: "Feeling stressed or overwhelmed"
+- tapOn: "Morning coffee or tea"
+- tapOn: "Continue"
+
+# 6. Medical Disclaimer Screen
+- assertVisible: "Medical Disclaimer"
+- assertVisible: "Not a Medical Device"
+- tapOn: "I understand and accept"
+- tapOn: "Enter Ember"
+
+# 7. Verification: Home Dashboard Loaded
+- assertVisible: "Smoke-Free Time"
+- assertVisible: "Cigarettes Avoided"
+- assertVisible: "Money Saved"

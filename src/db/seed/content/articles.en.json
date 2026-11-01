@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "items": [
+    {
+      "id": "article-001",
+      "type": "article",
+      "category": "physiology",
+      "title": "The 4 Phases of Nicotine Withdrawal",
+      "body": "Withdrawal unfolds in predictable physiological stages. Phase 1 (Hours 0–72) features peak physical cravings as nicotine leaves blood circulation. Phase 2 (Days 4–14) involves neurotransmitter rebalancing with psychological restlessness. Phase 3 (Weeks 3–6) sees dramatic decreases in craving frequency as brain nicotinic receptors down-regulate. Phase 4 (Month 2 onwards) is habit consolidation where automatic urges disappear.",
+      "source": "Mayo Clinic Nicotine Dependence Center",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-002",
+      "type": "article",
+      "category": "pharmacotherapy",
+      "title": "Nicotine Replacement Therapy: Facts & Guidance",
+      "body": "Nicotine Replacement Therapy (NRT)—such as patches, gum, lozenges, and inhalators—delivers controlled therapeutic nicotine without the 7,000 toxic combustion chemicals found in tobacco smoke. Clinical trials show NRT can double cessation success rates when used correctly. Patches provide stable 16 or 24-hour background coverage, while fast-acting gums or lozenges handle breakthrough acute cravings. Always consult your physician.",
+      "source": "Cochrane Systematic Review: Nicotine Receptor Partial Agonists",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-003",
+      "type": "article",
+      "category": "cbt",
+      "title": "Healthy Stress Management Without Smoke",
+      "body": "Tobacco provides an artificial illusion of stress relief because inhaling delivers a brief dopamine rush that quells the withdrawal caused by the preceding cigarette. Once smoke-free, you can access superior natural stress reduction tools: progressive muscle relaxation, diaphragmatic 4-7-8 breathing, brisk walking, and cold face splashes. These methods stimulate the vagal nerve directly without addictive penalties.",
+      "source": "American Psychological Association: Stress & Health",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-004",
+      "type": "article",
+      "category": "nutrition",
+      "title": "Managing Weight and Metabolism During Cessation",
+      "body": "Nicotine artificially elevated your basal metabolic rate by approximately 100 to 200 calories per day while dulling appetite. To prevent unwanted weight gain, focus on high-satiety foods: fibrous vegetables, whole fruits, lean proteins, and ample water. Regular physical activity compensates for metabolic normalization while providing immediate endorphin releases that protect against low moods.",
+      "source": "Harvard T.H. Chan School of Public Health",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-005",
+      "type": "article",
+      "category": "sleep",
+      "title": "Restoring Natural Sleep Architecture",
+      "body": "During early cessation, insomnia or disrupted sleep may occur as dopamine and acetylcholine systems normalize. Good sleep hygiene accelerates recovery: maintain a consistent sleep schedule, eliminate caffeine after early afternoon, avoid heavy meals close to bedtime, and dim blue screens 60 minutes before sleep. Normal deep restorative sleep typically returns within 2 to 3 weeks.",
+      "source": "National Sleep Foundation Guidelines",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-006",
+      "type": "article",
+      "category": "social",
+      "title": "Navigating Alcohol and Social Gatherings",
+      "body": "Alcohol and smoking have shared neural pathways and strong conditioned associations. Alcohol lowers executive prefrontal inhibition, significantly raising relapse risk during early recovery. In the first 30 days, consider minimizing alcohol intake. When attending gatherings, hold non-alcoholic sparkling water with lime, stay away from designated smoking shelters, and establish an early exit plan.",
+      "source": "National Institute on Alcohol Abuse and Alcoholism (NIAAA)",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-007",
+      "type": "article",
+      "category": "physiology",
+      "title": "The Cellular Biology of Lung Recovery",
+      "body": "Within 48 hours of your last cigarette, bronchial passages relax, making breathing easier. Between weeks 2 and 12, circulation and lung function increase by up to 30%. Within 1 to 9 months, microscopic cilia regain normal function in the lungs, increasing the ability to handle mucus, clean the airways, and reduce infection risk. Your lungs are resilient self-cleaning organs.",
+      "source": "American Lung Association: Lung Health Research",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-008",
+      "type": "article",
+      "category": "cbt",
+      "title": "Cognitive Behavioral Strategies for Cravings",
+      "body": "CBT views cravings as automatic learned conditioned responses. By identifying the activating event (Situation), examining the spontaneous negative Belief (\"I need a cigarette right now\"), and generating an objective Rational Reframe (\"A cigarette will only restart withdrawal\"), you disconnect cue from compulsion. Thought records weaken addictive neural loops over time.",
+      "source": "Beck Institute for Cognitive Behavior Therapy",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-009",
+      "type": "article",
+      "category": "mindfulness",
+      "title": "Mindfulness and Somatic Urge Observation",
+      "body": "Mindfulness teaches experiential acceptance rather than avoidance or suppression. When you suppress an urge, it gains paradoxical psychological strength. When you observe an urge somatically—noting physical sensations of heart rate, temperature, and throat sensations with neutral interest—the urge loses its terrifying grip and dissolves naturally.",
+      "source": "Mindfulness-Based Relapse Prevention Protocol, Marlatt & Chawla",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-010",
+      "type": "article",
+      "category": "neuroscience",
+      "title": "How the Brain’s Dopamine Pathways Heal",
+      "body": "Chronic nicotine exposure down-regulates endogenous dopamine receptors, leading to feelings of anhedonia (inability to feel pleasure) during the first days of cessation. Clinical neuroimaging shows that within 6 to 12 weeks of abstinence, dopamine transporter levels and receptor density return to the baseline levels of lifetime non-smokers.",
+      "source": "Neuropsychopharmacology Journal: Dopaminergic Recovery",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-011",
+      "type": "article",
+      "category": "health",
+      "title": "Protecting Loved Ones From Secondhand Harm",
+      "body": "Secondhand smoke contains more than 70 known carcinogenic compounds. Non-smokers exposed to environmental tobacco smoke suffer elevated risks of coronary heart disease and stroke. By quitting, you immediately eliminate environmental smoke exposure for family, pets, and children, protecting their long-term cardiovascular and pulmonary wellness.",
+      "source": "WHO Guidelines on Secondhand Smoke Protection",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-012",
+      "type": "article",
+      "category": "habits",
+      "title": "Habit Reversal: The Cue-Routine-Reward Loop",
+      "body": "Habits reside in the basal ganglia as automated procedural memory. To extinguish an unwanted habit, identify the precise trigger (e.g., getting in the car) and immediately substitute a competing healthy behavior (e.g., chewing sugar-free mint gum or singing along to an audio track). Over 30 days, the new routine becomes your brain’s default choice.",
+      "source": "Journal of Applied Behavior Analysis",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-013",
+      "type": "article",
+      "category": "cardiovascular",
+      "title": "Cardiovascular Healing Timeline",
+      "body": "At 20 minutes, heart rate normalizes. At 24 hours, acute risk of heart attack begins declining. At 1 year smoke-free, excess risk of coronary heart disease drops by 50% compared to a continuing smoker. At 5 years, stroke risk is reduced to that of a non-smoker. The cardiovascular system exhibits extraordinary capacity for recovery.",
+      "source": "American Heart Association Scientific Statement",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-014",
+      "type": "article",
+      "category": "psychology",
+      "title": "Long-term Mental Health Improvements",
+      "body": "A landmark meta-analysis published in the British Medical Journal demonstrated that quitting smoking is associated with significant reductions in depression, anxiety, and stress, accompanied by marked increases in positive mood and quality of life. The effect size of cessation on anxiety equals or exceeds that of antidepressant medications.",
+      "source": "British Medical Journal (BMJ): Change in Mental Health After Smoking Cessation",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-015",
+      "type": "article",
+      "category": "physiology",
+      "title": "Why Coffee Hits Harder After Quitting",
+      "body": "Cigarette smoke contains polycyclic aromatic hydrocarbons that induce liver enzymes (specifically CYP1A2), accelerating caffeine clearance by nearly 50%. When you stop smoking, caffeine stays in your system twice as long. If you experience unexpected jitters or anxiety, consider halving your coffee or tea intake to match your new metabolic speed.",
+      "source": "British Journal of Clinical Pharmacology",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-016",
+      "type": "article",
+      "category": "social",
+      "title": "Building a Smoke-Free Support Ecosystem",
+      "body": "Social support is a key predictor of cessation success. Share your goal with trusted friends and family who respect your decision. Join smoke-free peer communities or connect with qualified cessation coaches. If someone in your circle continues to smoke, politely request that they refrain from smoking in your presence or offering cigarettes.",
+      "source": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-017",
+      "type": "article",
+      "category": "relapse-prevention",
+      "title": "Marlatt’s Relapse Prevention Model Explained",
+      "body": "Renowned clinical psychologist Dr. Alan Marlatt distinguished a single \"slip\" (a lapse) from a full return to smoking (a relapse). A slip is an isolated mistake that offers rich clinical data about an unmanaged trigger. Relapse only occurs if the individual adopts the \"Abstinence Violation Effect\"—falsely believing all progress is lost. Learn, forgive, and recommit immediately.",
+      "source": "Relapse Prevention: Maintenance Strategies in Addictive Behavior",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-018",
+      "type": "article",
+      "category": "coping",
+      "title": "Healthy Oral and Tactile Alternatives",
+      "body": "Decades of hand-to-mouth motor repetition create strong muscular memory. Overcome oral fixation by keeping healthy tactile anchors on hand: cinnamon sticks, flavored toothpicks, stainless steel water straws, sensory worry stones, and sugar-free mints. Providing healthy sensory input soothes motor restlessness until the reflex extinguishes.",
+      "source": "Cleveland Clinic Smoking Cessation Program",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-019",
+      "type": "article",
+      "category": "economics",
+      "title": "The Compounding Economics of Quitting",
+      "body": "A pack-a-day habit at $10.00 per pack costs $3,650 per year. Over 10 years, factoring conservative investment returns, this represents over $50,000 in wealth. Beyond direct cigarette costs, non-smokers enjoy lower life insurance premiums, reduced healthcare out-of-pocket expenses, and higher home and automobile resale values.",
+      "source": "Journal of Health Economics: Lifetime Financial Return of Smoking Cessation",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    },
+    {
+      "id": "article-020",
+      "type": "article",
+      "category": "motivation",
+      "title": "The Neuroscience of Self-Celebration",
+      "body": "Positive reinforcement releases endogenous dopamine, cementing newly formed behavioral pathways. When you achieve a smoke-free milestone—whether it is 24 hours, 7 days, or resisting an intense craving—take 10 seconds to consciously feel proud of your agency. Deliberate celebration conditions your brain to value your non-smoking identity.",
+      "source": "Stanford University Behavior Design Lab",
+      "reviewedBy": "Dr. Elena Vance, MD (Clinical Pulmonology & Addiction Medicine)",
+      "reviewedAt": "2026-11-01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+appId: com.ember.quitsmoking
+---
+# ==============================================================================
+# Sprint 7 Maestro E2E Flow: Settings, App Lock, Backup & Resources
+# ==============================================================================
+
+- launchApp:
+    clearState: false
+
+# 1. Navigate to Settings
+- tapOn: "Settings"
+- assertVisible: "PREFERENCES & DATA"
+
+# 2. View Security & App Lock
+- assertVisible: "Security & App Lock"
+- assertVisible: "Biometric & Passcode Lock"
+
+# 3. Test Export Backup
+- assertVisible: "Backup & Data Management"
+- tapOn: "Export Backup (JSON)"
+
+# 4. Open Resources Screen
+- tapOn: "Clinical Citations & Global Directory"
+- assertVisible: "Verified Quitlines & Helplines"
+- assertVisible: "1-800-QUIT-NOW"
+- assertVisible: "Medical Disclaimer"
+- assertVisible: "Scientific Sources & Clinical Evidence"
+- tapOn: "Go back"
+
+# 5. Return to Settings Dashboard
+- assertVisible: "PREFERENCES & DATA"
